@@ -13,7 +13,12 @@ namespace New_POS_Application
     public partial class POS_Cashier_Interface : Form
     {
 
+		// GLOBAL VARIABLES
         double gl_price = 0.0;
+		String baseString = "G:\\school\\3rdyr\\2ndsem\\ecp\\prelim\\quiqui\\forks\\Quiz1_Elective\\images"; // change accordingly
+
+
+
         public POS_Cashier_Interface()
         {
             InitializeComponent();
@@ -44,7 +49,6 @@ namespace New_POS_Application
             gl_price = 120.0;
 
 
-            String baseString = "C:\\Users\\USER\\OneDrive\\Desktop\\New_POS_Application\\images";
             String specificContext = "\\dinner\\d";
             String whatPack = "Dinner Pack";
             pictureBox1.Image = Image.FromFile(baseString + specificContext + "1.jfif");
@@ -62,6 +66,11 @@ namespace New_POS_Application
             pictureBox13.Image = Image.FromFile(baseString + specificContext + "13.jfif");
             pictureBox14.Image = Image.FromFile(baseString + specificContext + "14.jfif");
             pictureBox15.Image = Image.FromFile(baseString + specificContext + "15.jfif");
+            pictureBox16.Image = Image.FromFile(baseString + specificContext + "16.jfif");
+            pictureBox17.Image = Image.FromFile(baseString + specificContext + "17.jfif");
+            pictureBox18.Image = Image.FromFile(baseString + specificContext + "18.jfif");
+            pictureBox19.Image = Image.FromFile(baseString + specificContext + "19.jfif");
+            pictureBox20.Image = Image.FromFile(baseString + specificContext + "20.jfif");
 
             name1lbl.Text = whatPack + " 1";
             name2lbl.Text = whatPack + " 2";
@@ -78,6 +87,12 @@ namespace New_POS_Application
             name13lbl.Text = whatPack + " 13";
             name14lbl.Text = whatPack + " 14";
             name15lbl.Text = whatPack + " 15";
+            name16lbl.Text = whatPack + " 16";
+            name17lbl.Text = whatPack + " 17";
+            name18lbl.Text = whatPack + " 18";
+            name19lbl.Text = whatPack + " 19";
+            name20lbl.Text = whatPack + " 20";
+
 
 
         }
@@ -88,7 +103,6 @@ namespace New_POS_Application
             gl_price = 150.0;
 
 
-            String baseString = "C:\\Users\\USER\\OneDrive\\Desktop\\New_POS_Application\\images";
             String specificContext = "\\lunch\\l";
             String whatPack = "Lunch Pack";
             pictureBox1.Image = Image.FromFile(baseString + specificContext + "1.jfif");
@@ -106,6 +120,11 @@ namespace New_POS_Application
             pictureBox13.Image = Image.FromFile(baseString + specificContext + "13.jfif");
             pictureBox14.Image = Image.FromFile(baseString + specificContext + "14.jfif");
             pictureBox15.Image = Image.FromFile(baseString + specificContext + "15.jfif");
+            pictureBox16.Image = Image.FromFile(baseString + specificContext + "16.jfif");
+            pictureBox17.Image = Image.FromFile(baseString + specificContext + "17.jfif");
+            pictureBox18.Image = Image.FromFile(baseString + specificContext + "18.jfif");
+            pictureBox19.Image = Image.FromFile(baseString + specificContext + "19.jfif");
+            pictureBox20.Image = Image.FromFile(baseString + specificContext + "20.jfif");
 
             name1lbl.Text = whatPack + " 1";
             name2lbl.Text = whatPack + " 2";
@@ -122,6 +141,11 @@ namespace New_POS_Application
             name13lbl.Text = whatPack + " 13";
             name14lbl.Text = whatPack + " 14";
             name15lbl.Text = whatPack + " 15";
+            name16lbl.Text = whatPack + " 16";
+            name17lbl.Text = whatPack + " 17";
+            name18lbl.Text = whatPack + " 18";
+            name19lbl.Text = whatPack + " 19";
+            name20lbl.Text = whatPack + " 20";
         }
 
         private void dessertsBtn_Click(object sender, EventArgs e)
@@ -131,7 +155,6 @@ namespace New_POS_Application
             gl_price = 100.0;
 
 
-            String baseString = "C:\\Users\\USER\\OneDrive\\Desktop\\New_POS_Application\\images";
             String specificContext = "\\dessert\\s";
             String whatPack = "Dessert Pack";
             pictureBox1.Image = Image.FromFile(baseString + specificContext + "1.jfif");
@@ -149,6 +172,11 @@ namespace New_POS_Application
             pictureBox13.Image = Image.FromFile(baseString + specificContext + "13.jfif");
             pictureBox14.Image = Image.FromFile(baseString + specificContext + "14.jfif");
             pictureBox15.Image = Image.FromFile(baseString + specificContext + "15.jfif");
+            pictureBox16.Image = Image.FromFile(baseString + specificContext + "16.jfif");
+            pictureBox17.Image = Image.FromFile(baseString + specificContext + "17.jfif");
+            pictureBox18.Image = Image.FromFile(baseString + specificContext + "18.jfif");
+            pictureBox19.Image = Image.FromFile(baseString + specificContext + "19.jfif");
+            pictureBox20.Image = Image.FromFile(baseString + specificContext + "20.jfif");
 
             name1lbl.Text = whatPack + " 1";
             name2lbl.Text = whatPack + " 2";
@@ -165,6 +193,11 @@ namespace New_POS_Application
             name13lbl.Text = whatPack + " 13";
             name14lbl.Text = whatPack + " 14";
             name15lbl.Text = whatPack + " 15";
+            name16lbl.Text = whatPack + " 16";
+            name17lbl.Text = whatPack + " 17";
+            name18lbl.Text = whatPack + " 18";
+            name19lbl.Text = whatPack + " 19";
+            name20lbl.Text = whatPack + " 20";
         }
 
         private void breakfastBrn_Click(object sender, EventArgs e)
@@ -173,7 +206,6 @@ namespace New_POS_Application
             itemnametxtbox.Text = name1lbl.Text;
             gl_price = 200.0;
 
-            String baseString = "C:\\Users\\USER\\OneDrive\\Desktop\\New_POS_Application\\images";
             String specificContext = "\\breakfast\\b";
             String whatPack = "Breakfast Pack";
             pictureBox1.Image = Image.FromFile(baseString + specificContext + "1.jfif");
@@ -191,6 +223,11 @@ namespace New_POS_Application
             pictureBox13.Image = Image.FromFile(baseString + specificContext + "13.jfif");
             pictureBox14.Image = Image.FromFile(baseString + specificContext + "14.jfif");
             pictureBox15.Image = Image.FromFile(baseString + specificContext + "15.jfif");
+            pictureBox16.Image = Image.FromFile(baseString + specificContext + "16.jfif");
+            pictureBox17.Image = Image.FromFile(baseString + specificContext + "17.jfif");
+            pictureBox18.Image = Image.FromFile(baseString + specificContext + "18.jfif");
+            pictureBox19.Image = Image.FromFile(baseString + specificContext + "19.jfif");
+            pictureBox20.Image = Image.FromFile(baseString + specificContext + "20.jfif");
 
             name1lbl.Text = whatPack + " 1";
             name2lbl.Text = whatPack + " 2";
@@ -207,6 +244,11 @@ namespace New_POS_Application
             name13lbl.Text = whatPack + " 13";
             name14lbl.Text = whatPack + " 14";
             name15lbl.Text = whatPack + " 15";
+            name16lbl.Text = whatPack + " 16";
+            name17lbl.Text = whatPack + " 17";
+            name18lbl.Text = whatPack + " 18";
+            name19lbl.Text = whatPack + " 19";
+            name20lbl.Text = whatPack + " 20";
         }
 
         private void beveragesBtn_Click(object sender, EventArgs e)
@@ -216,7 +258,6 @@ namespace New_POS_Application
             gl_price = 90.0;
 
 
-            String baseString = "C:\\Users\\USER\\OneDrive\\Desktop\\New_POS_Application\\images";
             String specificContext = "\\beverages\\";
             String whatPack = "Beverage Pack";
             pictureBox1.Image = Image.FromFile(baseString + specificContext + "beer1.jfif");
@@ -271,7 +312,6 @@ namespace New_POS_Application
             itemnametxtbox.Text = name1lbl.Text;
             gl_price = 12.0;
 
-            String baseString = "C:\\Users\\USER\\OneDrive\\Desktop\\New_POS_Application\\images";
             String specificContext = "\\coffee\\c";
             String whatPack = "Coffee Pack";
             pictureBox1.Image = Image.FromFile(baseString + specificContext + "1.jfif");
@@ -289,6 +329,11 @@ namespace New_POS_Application
             pictureBox13.Image = Image.FromFile(baseString + specificContext + "13.jfif");
             pictureBox14.Image = Image.FromFile(baseString + specificContext + "14.jfif");
             pictureBox15.Image = Image.FromFile(baseString + specificContext + "15.jfif");
+            pictureBox16.Image = Image.FromFile(baseString + specificContext + "16.jfif");
+            pictureBox17.Image = Image.FromFile(baseString + specificContext + "17.jfif");
+            pictureBox18.Image = Image.FromFile(baseString + specificContext + "18.jfif");
+            pictureBox19.Image = Image.FromFile(baseString + specificContext + "19.jfif");
+            pictureBox20.Image = Image.FromFile(baseString + specificContext + "20.jfif");
 
 
             name1lbl.Text = whatPack + " 1";
@@ -306,6 +351,11 @@ namespace New_POS_Application
             name13lbl.Text = whatPack + " 13";
             name14lbl.Text = whatPack + " 14";
             name15lbl.Text = whatPack + " 15";
+            name16lbl.Text = whatPack + " 16";
+            name17lbl.Text = whatPack + " 17";
+            name18lbl.Text = whatPack + " 18";
+            name19lbl.Text = whatPack + " 19";
+            name20lbl.Text = whatPack + " 20";
         }
 
 
