@@ -66,6 +66,7 @@ namespace New_POS_Application
         /// <param name="e"></param>
         private void dinnerBtn_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             price1 = 150.00;
             price2 = 200.00;
             price3 = 250.00;
@@ -86,6 +87,9 @@ namespace New_POS_Application
             price18 = 120.00;
             price19 = 250.00;
             price20 = 130.00;
+=======
+
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
 
             String specificContext = "\\dinner\\d";
             String whatPack = "Dinner Pack";
@@ -118,7 +122,11 @@ namespace New_POS_Application
             namelbl6.Text = whatPack + " 6";
             namelbl7.Text = whatPack + " 7";
             namelbl8.Text = whatPack + " 8";
+<<<<<<< HEAD
             namelbl9.Text = whatPack + " 9";
+=======
+            name9lbl.Text = whatPack + " 9";
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             namelbl10.Text = whatPack + " 10";
             namelbl11.Text = whatPack + " 11";
             namelbl12.Text = whatPack + " 12";
@@ -136,6 +144,7 @@ namespace New_POS_Application
         }
         private void lunchBtn_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             price1 = 189.00;
             price2 = 100.00;
             price3 = 120.00;
@@ -156,6 +165,8 @@ namespace New_POS_Application
             price18 = 190.00;
             price19 = 315.00;
             price20 = 225.00;
+=======
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
 
 
             String specificContext = "\\lunch\\l";
@@ -189,7 +200,11 @@ namespace New_POS_Application
             namelbl6.Text = whatPack + " 6";
             namelbl7.Text = whatPack + " 7";
             namelbl8.Text = whatPack + " 8";
+<<<<<<< HEAD
             namelbl9.Text = whatPack + " 9";
+=======
+            name9lbl.Text = whatPack + " 9";
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             namelbl10.Text = whatPack + " 10";
             namelbl11.Text = whatPack + " 11";
             namelbl12.Text = whatPack + " 12";
@@ -205,6 +220,7 @@ namespace New_POS_Application
 
         private void dessertsBtn_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             price1 = 250.00;
             price2 = 200.00;
             price3 = 285.00;
@@ -225,6 +241,9 @@ namespace New_POS_Application
             price18 = 365.00;
             price19 = 395.00;
             price20 = 210.00;
+=======
+
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
 
             String specificContext = "\\dessert\\s";
             String whatPack = "Dessert Pack";
@@ -257,7 +276,11 @@ namespace New_POS_Application
             namelbl6.Text = whatPack + " 6";
             namelbl7.Text = whatPack + " 7";
             namelbl8.Text = whatPack + " 8";
+<<<<<<< HEAD
             namelbl9.Text = whatPack + " 9";
+=======
+            name9lbl.Text = whatPack + " 9";
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             namelbl10.Text = whatPack + " 10";
             namelbl11.Text = whatPack + " 11";
             namelbl12.Text = whatPack + " 12";
@@ -273,6 +296,7 @@ namespace New_POS_Application
 
         private void breakfastBrn_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             price1 = 199.00;
             price2 = 300.00;
             price3 = 125.00;
@@ -293,6 +317,8 @@ namespace New_POS_Application
             price18 = 190.00;
             price19 = 360.00;
             price20 = 105.00;
+=======
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
 
             String specificContext = "\\breakfast\\b";
             String whatPack = "Breakfast Pack";
@@ -325,7 +351,11 @@ namespace New_POS_Application
             namelbl6.Text = whatPack + " 6";
             namelbl7.Text = whatPack + " 7";
             namelbl8.Text = whatPack + " 8";
+<<<<<<< HEAD
             namelbl9.Text = whatPack + " 9";
+=======
+            name9lbl.Text = whatPack + " 9";
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             namelbl10.Text = whatPack + " 10";
             namelbl11.Text = whatPack + " 11";
             namelbl12.Text = whatPack + " 12";
@@ -341,6 +371,7 @@ namespace New_POS_Application
 
         private void beveragesBtn_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             price1 = 110.00;
             price2 = 89.00;
             price3 = 75.00;
@@ -361,6 +392,8 @@ namespace New_POS_Application
             price18 = 125.00;
             price19 = 108.00;
             price20 = 89.00;
+=======
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
 
 
             String specificContext = "\\beverages\\";
@@ -395,7 +428,11 @@ namespace New_POS_Application
             namelbl6.Text = whatPack + " 6";
             namelbl7.Text = whatPack + " 7";
             namelbl8.Text = whatPack + " 8";
+<<<<<<< HEAD
             namelbl9.Text = whatPack + " 9";
+=======
+            name9lbl.Text = whatPack + " 9";
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             namelbl10.Text = whatPack + " 10";
             namelbl11.Text = whatPack + " 11";
             namelbl12.Text = whatPack + " 12";
@@ -413,6 +450,7 @@ namespace New_POS_Application
         private void coffeeBtn_Click(object sender, EventArgs e)
         {
 
+<<<<<<< HEAD
             price1 = 55.00;
             price2 = 45.00;
             price3 = 70.00;
@@ -433,6 +471,8 @@ namespace New_POS_Application
             price18 = 50.00;
             price19 = 88.00;
             price20 = 77.00;
+=======
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
 
             String specificContext = "\\coffee\\c";
             String whatPack = "Coffee Pack";
@@ -466,7 +506,11 @@ namespace New_POS_Application
             namelbl6.Text = whatPack + " 6";
             namelbl7.Text = whatPack + " 7";
             namelbl8.Text = whatPack + " 8";
+<<<<<<< HEAD
             namelbl9.Text = whatPack + " 9";
+=======
+            name9lbl.Text = whatPack + " 9";
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             namelbl10.Text = whatPack + " 10";
             namelbl11.Text = whatPack + " 11";
             namelbl12.Text = whatPack + " 12";
@@ -488,47 +532,79 @@ namespace New_POS_Application
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl1.Text;
+<<<<<<< HEAD
             pricetextbox.Text = Convert.ToString(price1);
+=======
+            pricetextbox.Text = Convert.ToString(gl_price);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl2.Text;
+<<<<<<< HEAD
             pricetextbox.Text = Convert.ToString(price2);
+=======
+            pricetextbox.Text = Convert.ToString(gl_price);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl3.Text;
+<<<<<<< HEAD
             pricetextbox.Text = Convert.ToString(price3);
+=======
+            pricetextbox.Text = Convert.ToString(gl_price);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl4.Text;
+<<<<<<< HEAD
             pricetextbox.Text = Convert.ToString(price4);
+=======
+            pricetextbox.Text = Convert.ToString(gl_price);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl5.Text;
+<<<<<<< HEAD
             pricetextbox.Text = Convert.ToString(price5);
+=======
+            pricetextbox.Text = Convert.ToString(gl_price);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl6.Text;
+<<<<<<< HEAD
             pricetextbox.Text = Convert.ToString(price6);
+=======
+            pricetextbox.Text = Convert.ToString(gl_price);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
         }
         private void pictureBox7_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl7.Text;
+<<<<<<< HEAD
             pricetextbox.Text = Convert.ToString(price7);
+=======
+            pricetextbox.Text = Convert.ToString(gl_price);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
         }
         private void pictureBox8_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl8.Text;
+<<<<<<< HEAD
             pricetextbox.Text = Convert.ToString(price8);
+=======
+            pricetextbox.Text = Convert.ToString(gl_price);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
         }
         private void pictureBox9_Click(object sender, EventArgs e)
         {
@@ -538,56 +614,97 @@ namespace New_POS_Application
         private void pictureBox10_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl10.Text;
+<<<<<<< HEAD
             pricetextbox.Text = Convert.ToString(price10);
+=======
+            pricetextbox.Text = Convert.ToString(gl_price);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
         }
         private void pictureBox11_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl11.Text;
+<<<<<<< HEAD
             pricetextbox.Text = Convert.ToString(price11);
+=======
+            pricetextbox.Text = Convert.ToString(gl_price);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
         }
         private void pictureBox12_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl12.Text;
+<<<<<<< HEAD
             pricetextbox.Text = Convert.ToString(price12);
+=======
+            pricetextbox.Text = Convert.ToString(gl_price);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
         }
         private void pictureBox13_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl13.Text;
+<<<<<<< HEAD
             pricetextbox.Text = Convert.ToString(price13);
+=======
+            pricetextbox.Text = Convert.ToString(gl_price);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
         }
         private void pictureBox14_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl14.Text;
+<<<<<<< HEAD
             pricetextbox.Text = Convert.ToString(price14);
+=======
+            pricetextbox.Text = Convert.ToString(gl_price);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
         }
         private void pictureBox15_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl15.Text;
+<<<<<<< HEAD
             pricetextbox.Text = Convert.ToString(price15);
+=======
+            pricetextbox.Text = Convert.ToString(gl_price);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
         }
         private void pictureBox16_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl16.Text;
+<<<<<<< HEAD
             pricetextbox.Text = Convert.ToString(price16);
+=======
+            pricetextbox.Text = Convert.ToString(gl_price);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
         }
         private void pictureBox17_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl17.Text;
+<<<<<<< HEAD
             pricetextbox.Text = Convert.ToString(price17);
+=======
+            pricetextbox.Text = Convert.ToString(gl_price);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
         }
         private void pictureBox18_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl18.Text;
+<<<<<<< HEAD
             pricetextbox.Text = Convert.ToString(price18);
+=======
+            pricetextbox.Text = Convert.ToString(gl_price);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
         }
         private void pictureBox19_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl19.Text;
+<<<<<<< HEAD
             pricetextbox.Text = Convert.ToString(price19);
+=======
+            pricetextbox.Text = Convert.ToString(gl_price);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
         }
         private void pictureBox20_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl20.Text;
+<<<<<<< HEAD
             pricetextbox.Text = Convert.ToString(price20);
 		}
 
@@ -601,6 +718,21 @@ namespace New_POS_Application
 
         }
 
+=======
+            pricetextbox.Text = Convert.ToString(gl_price);
+        }
+
+        /// <summary>
+        /// for processing the discount checkboxes
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
         private void regularRbtn_CheckedChanged(object sender, EventArgs e)
         {
 
@@ -637,11 +769,14 @@ namespace New_POS_Application
         }
 
         private void exitbtn_Click(object sender, EventArgs e)
+<<<<<<< HEAD
         {
 
         }
 
         private void pricetextbox_TextChanged(object sender, EventArgs e)
+=======
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
         {
 
         }

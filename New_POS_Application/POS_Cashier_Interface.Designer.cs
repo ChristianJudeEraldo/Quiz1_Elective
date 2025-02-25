@@ -111,7 +111,11 @@
             this.namelbl12 = new System.Windows.Forms.Label();
             this.namelbl11 = new System.Windows.Forms.Label();
             this.namelbl10 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.namelbl9 = new System.Windows.Forms.Label();
+=======
+            this.name9lbl = new System.Windows.Forms.Label();
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             this.namelbl8 = new System.Windows.Forms.Label();
             this.namelbl7 = new System.Windows.Forms.Label();
             this.namelbl6 = new System.Windows.Forms.Label();
@@ -440,7 +444,11 @@
             this.namelbl5.Location = new System.Drawing.Point(933, 225);
             this.namelbl5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl5.Name = "namelbl5";
+<<<<<<< HEAD
             this.namelbl5.Size = new System.Drawing.Size(44, 16);
+=======
+            this.namelbl5.Size = new System.Drawing.Size(53, 20);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             this.namelbl5.TabIndex = 24;
             this.namelbl5.Text = "Name";
             // 
@@ -452,7 +460,11 @@
             this.namelbl4.Location = new System.Drawing.Point(723, 225);
             this.namelbl4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl4.Name = "namelbl4";
+<<<<<<< HEAD
             this.namelbl4.Size = new System.Drawing.Size(44, 16);
+=======
+            this.namelbl4.Size = new System.Drawing.Size(53, 20);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             this.namelbl4.TabIndex = 23;
             this.namelbl4.Text = "Name";
             // 
@@ -464,7 +476,11 @@
             this.namelbl3.Location = new System.Drawing.Point(499, 224);
             this.namelbl3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl3.Name = "namelbl3";
+<<<<<<< HEAD
             this.namelbl3.Size = new System.Drawing.Size(44, 16);
+=======
+            this.namelbl3.Size = new System.Drawing.Size(53, 20);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             this.namelbl3.TabIndex = 22;
             this.namelbl3.Text = "Name";
             // 
@@ -476,7 +492,11 @@
             this.namelbl2.Location = new System.Drawing.Point(277, 225);
             this.namelbl2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl2.Name = "namelbl2";
+<<<<<<< HEAD
             this.namelbl2.Size = new System.Drawing.Size(44, 16);
+=======
+            this.namelbl2.Size = new System.Drawing.Size(53, 20);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             this.namelbl2.TabIndex = 21;
             this.namelbl2.Text = "Name";
             // 
@@ -488,7 +508,11 @@
             this.namelbl1.Location = new System.Drawing.Point(52, 225);
             this.namelbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl1.Name = "namelbl1";
+<<<<<<< HEAD
             this.namelbl1.Size = new System.Drawing.Size(44, 16);
+=======
+            this.namelbl1.Size = new System.Drawing.Size(53, 20);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             this.namelbl1.TabIndex = 20;
             this.namelbl1.Text = "Name";
             // 
@@ -825,7 +849,11 @@
             this.groupBox4.Controls.Add(this.namelbl12);
             this.groupBox4.Controls.Add(this.namelbl11);
             this.groupBox4.Controls.Add(this.namelbl10);
+<<<<<<< HEAD
             this.groupBox4.Controls.Add(this.namelbl9);
+=======
+            this.groupBox4.Controls.Add(this.name9lbl);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             this.groupBox4.Controls.Add(this.namelbl8);
             this.groupBox4.Controls.Add(this.namelbl7);
             this.groupBox4.Controls.Add(this.namelbl6);
@@ -873,7 +901,11 @@
             this.pricelbl20.Location = new System.Drawing.Point(1090, 896);
             this.pricelbl20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl20.Name = "pricelbl20";
+<<<<<<< HEAD
             this.pricelbl20.Size = new System.Drawing.Size(37, 16);
+=======
+            this.pricelbl20.Size = new System.Drawing.Size(46, 20);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             this.pricelbl20.TabIndex = 59;
             this.pricelbl20.Text = "price";
             // 
@@ -885,7 +917,11 @@
             this.pricelbl19.Location = new System.Drawing.Point(866, 896);
             this.pricelbl19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl19.Name = "pricelbl19";
+<<<<<<< HEAD
             this.pricelbl19.Size = new System.Drawing.Size(37, 16);
+=======
+            this.pricelbl19.Size = new System.Drawing.Size(46, 20);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             this.pricelbl19.TabIndex = 58;
             this.pricelbl19.Text = "price";
             // 
@@ -897,7 +933,11 @@
             this.pricelbl18.Location = new System.Drawing.Point(651, 896);
             this.pricelbl18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl18.Name = "pricelbl18";
+<<<<<<< HEAD
             this.pricelbl18.Size = new System.Drawing.Size(37, 16);
+=======
+            this.pricelbl18.Size = new System.Drawing.Size(46, 20);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             this.pricelbl18.TabIndex = 57;
             this.pricelbl18.Text = "price";
             // 
@@ -909,7 +949,11 @@
             this.pricelbl17.Location = new System.Drawing.Point(416, 898);
             this.pricelbl17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl17.Name = "pricelbl17";
+<<<<<<< HEAD
             this.pricelbl17.Size = new System.Drawing.Size(37, 16);
+=======
+            this.pricelbl17.Size = new System.Drawing.Size(46, 20);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             this.pricelbl17.TabIndex = 56;
             this.pricelbl17.Text = "price";
             // 
@@ -921,7 +965,11 @@
             this.pricelbl16.Location = new System.Drawing.Point(173, 896);
             this.pricelbl16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl16.Name = "pricelbl16";
+<<<<<<< HEAD
             this.pricelbl16.Size = new System.Drawing.Size(37, 16);
+=======
+            this.pricelbl16.Size = new System.Drawing.Size(46, 20);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             this.pricelbl16.TabIndex = 55;
             this.pricelbl16.Text = "price";
             // 
@@ -933,7 +981,11 @@
             this.pricelbl15.Location = new System.Drawing.Point(1090, 654);
             this.pricelbl15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl15.Name = "pricelbl15";
+<<<<<<< HEAD
             this.pricelbl15.Size = new System.Drawing.Size(37, 16);
+=======
+            this.pricelbl15.Size = new System.Drawing.Size(46, 20);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             this.pricelbl15.TabIndex = 54;
             this.pricelbl15.Text = "price";
             // 
@@ -945,7 +997,11 @@
             this.pricelbl14.Location = new System.Drawing.Point(866, 654);
             this.pricelbl14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl14.Name = "pricelbl14";
+<<<<<<< HEAD
             this.pricelbl14.Size = new System.Drawing.Size(37, 16);
+=======
+            this.pricelbl14.Size = new System.Drawing.Size(46, 20);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             this.pricelbl14.TabIndex = 53;
             this.pricelbl14.Text = "price";
             // 
@@ -957,7 +1013,11 @@
             this.pricelbl13.Location = new System.Drawing.Point(651, 654);
             this.pricelbl13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl13.Name = "pricelbl13";
+<<<<<<< HEAD
             this.pricelbl13.Size = new System.Drawing.Size(37, 16);
+=======
+            this.pricelbl13.Size = new System.Drawing.Size(46, 20);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             this.pricelbl13.TabIndex = 52;
             this.pricelbl13.Text = "price";
             // 
@@ -969,7 +1029,11 @@
             this.pricelbl12.Location = new System.Drawing.Point(416, 656);
             this.pricelbl12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl12.Name = "pricelbl12";
+<<<<<<< HEAD
             this.pricelbl12.Size = new System.Drawing.Size(37, 16);
+=======
+            this.pricelbl12.Size = new System.Drawing.Size(46, 20);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             this.pricelbl12.TabIndex = 51;
             this.pricelbl12.Text = "price";
             // 
@@ -981,7 +1045,11 @@
             this.pricelbl11.Location = new System.Drawing.Point(173, 654);
             this.pricelbl11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl11.Name = "pricelbl11";
+<<<<<<< HEAD
             this.pricelbl11.Size = new System.Drawing.Size(37, 16);
+=======
+            this.pricelbl11.Size = new System.Drawing.Size(46, 20);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             this.pricelbl11.TabIndex = 50;
             this.pricelbl11.Text = "price";
             // 
@@ -993,9 +1061,255 @@
             this.pricelbl10.Location = new System.Drawing.Point(1090, 443);
             this.pricelbl10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl10.Name = "pricelbl10";
+<<<<<<< HEAD
             this.pricelbl10.Size = new System.Drawing.Size(37, 16);
             this.pricelbl10.TabIndex = 49;
             this.pricelbl10.Text = "price";
+=======
+            this.pricelbl10.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl10.TabIndex = 49;
+            this.pricelbl10.Text = "price";
+            // 
+            // pricelbl9
+            // 
+            this.pricelbl9.AutoSize = true;
+            this.pricelbl9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pricelbl9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pricelbl9.Location = new System.Drawing.Point(866, 443);
+            this.pricelbl9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.pricelbl9.Name = "pricelbl9";
+            this.pricelbl9.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl9.TabIndex = 48;
+            this.pricelbl9.Text = "price";
+            // 
+            // pricelbl8
+            // 
+            this.pricelbl8.AutoSize = true;
+            this.pricelbl8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pricelbl8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pricelbl8.Location = new System.Drawing.Point(629, 443);
+            this.pricelbl8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.pricelbl8.Name = "pricelbl8";
+            this.pricelbl8.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl8.TabIndex = 47;
+            this.pricelbl8.Text = "price";
+            // 
+            // pricelbl7
+            // 
+            this.pricelbl7.AutoSize = true;
+            this.pricelbl7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pricelbl7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pricelbl7.Location = new System.Drawing.Point(416, 445);
+            this.pricelbl7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.pricelbl7.Name = "pricelbl7";
+            this.pricelbl7.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl7.TabIndex = 46;
+            this.pricelbl7.Text = "price";
+            // 
+            // pricelbl6
+            // 
+            this.pricelbl6.AutoSize = true;
+            this.pricelbl6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pricelbl6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pricelbl6.Location = new System.Drawing.Point(173, 443);
+            this.pricelbl6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.pricelbl6.Name = "pricelbl6";
+            this.pricelbl6.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl6.TabIndex = 45;
+            this.pricelbl6.Text = "price";
+            // 
+            // pricelbl5
+            // 
+            this.pricelbl5.AutoSize = true;
+            this.pricelbl5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pricelbl5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pricelbl5.Location = new System.Drawing.Point(1090, 225);
+            this.pricelbl5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.pricelbl5.Name = "pricelbl5";
+            this.pricelbl5.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl5.TabIndex = 44;
+            this.pricelbl5.Text = "price";
+            // 
+            // pricelbl4
+            // 
+            this.pricelbl4.AutoSize = true;
+            this.pricelbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pricelbl4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pricelbl4.Location = new System.Drawing.Point(866, 225);
+            this.pricelbl4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.pricelbl4.Name = "pricelbl4";
+            this.pricelbl4.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl4.TabIndex = 43;
+            this.pricelbl4.Text = "price";
+            // 
+            // pricelbl3
+            // 
+            this.pricelbl3.AutoSize = true;
+            this.pricelbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pricelbl3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pricelbl3.Location = new System.Drawing.Point(629, 225);
+            this.pricelbl3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.pricelbl3.Name = "pricelbl3";
+            this.pricelbl3.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl3.TabIndex = 42;
+            this.pricelbl3.Text = "price";
+            // 
+            // pricelbl2
+            // 
+            this.pricelbl2.AutoSize = true;
+            this.pricelbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pricelbl2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pricelbl2.Location = new System.Drawing.Point(416, 227);
+            this.pricelbl2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.pricelbl2.Name = "pricelbl2";
+            this.pricelbl2.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl2.TabIndex = 41;
+            this.pricelbl2.Text = "price";
+            // 
+            // pricelbl1
+            // 
+            this.pricelbl1.AutoSize = true;
+            this.pricelbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pricelbl1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pricelbl1.Location = new System.Drawing.Point(173, 225);
+            this.pricelbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.pricelbl1.Name = "pricelbl1";
+            this.pricelbl1.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl1.TabIndex = 40;
+            this.pricelbl1.Text = "price";
+            // 
+            // namelbl20
+            // 
+            this.namelbl20.AutoSize = true;
+            this.namelbl20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelbl20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.namelbl20.Location = new System.Drawing.Point(951, 895);
+            this.namelbl20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.namelbl20.Name = "namelbl20";
+            this.namelbl20.Size = new System.Drawing.Size(154, 20);
+            this.namelbl20.TabIndex = 39;
+            this.namelbl20.Text = "KFC Family Meal B";
+            // 
+            // namelbl19
+            // 
+            this.namelbl19.AutoSize = true;
+            this.namelbl19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelbl19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.namelbl19.Location = new System.Drawing.Point(723, 895);
+            this.namelbl19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.namelbl19.Name = "namelbl19";
+            this.namelbl19.Size = new System.Drawing.Size(157, 20);
+            this.namelbl19.TabIndex = 38;
+            this.namelbl19.Text = "KFC Combo Meal A";
+            // 
+            // namelbl18
+            // 
+            this.namelbl18.AutoSize = true;
+            this.namelbl18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelbl18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.namelbl18.Location = new System.Drawing.Point(495, 891);
+            this.namelbl18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.namelbl18.Name = "namelbl18";
+            this.namelbl18.Size = new System.Drawing.Size(162, 40);
+            this.namelbl18.TabIndex = 37;
+            this.namelbl18.Text = "Burger and Checken\r\nMeal C";
+            // 
+            // namelbl17
+            // 
+            this.namelbl17.AutoSize = true;
+            this.namelbl17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelbl17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.namelbl17.Location = new System.Drawing.Point(273, 896);
+            this.namelbl17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.namelbl17.Name = "namelbl17";
+            this.namelbl17.Size = new System.Drawing.Size(158, 20);
+            this.namelbl17.TabIndex = 36;
+            this.namelbl17.Text = "KFC ChowFun Meal";
+            // 
+            // namelbl16
+            // 
+            this.namelbl16.AutoSize = true;
+            this.namelbl16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelbl16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.namelbl16.Location = new System.Drawing.Point(48, 892);
+            this.namelbl16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.namelbl16.Name = "namelbl16";
+            this.namelbl16.Size = new System.Drawing.Size(117, 40);
+            this.namelbl16.TabIndex = 35;
+            this.namelbl16.Text = "KFC Checken \r\nStrips Meal";
+            // 
+            // namelbl15
+            // 
+            this.namelbl15.AutoSize = true;
+            this.namelbl15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelbl15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.namelbl15.Location = new System.Drawing.Point(948, 654);
+            this.namelbl15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.namelbl15.Name = "namelbl15";
+            this.namelbl15.Size = new System.Drawing.Size(155, 20);
+            this.namelbl15.TabIndex = 34;
+            this.namelbl15.Text = "KFC Family MEal A";
+            // 
+            // namelbl14
+            // 
+            this.namelbl14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelbl14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.namelbl14.Location = new System.Drawing.Point(719, 654);
+            this.namelbl14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.namelbl14.Name = "namelbl14";
+            this.namelbl14.Size = new System.Drawing.Size(139, 40);
+            this.namelbl14.TabIndex = 33;
+            this.namelbl14.Text = "Checken Group Meal";
+            // 
+            // namelbl13
+            // 
+            this.namelbl13.AutoSize = true;
+            this.namelbl13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelbl13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.namelbl13.Location = new System.Drawing.Point(489, 654);
+            this.namelbl13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.namelbl13.Name = "namelbl13";
+            this.namelbl13.Size = new System.Drawing.Size(161, 40);
+            this.namelbl13.TabIndex = 32;
+            this.namelbl13.Text = "KFC Burger Combo \r\nMeal 1";
+            // 
+            // namelbl12
+            // 
+            this.namelbl12.AutoSize = true;
+            this.namelbl12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelbl12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.namelbl12.Location = new System.Drawing.Point(273, 654);
+            this.namelbl12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.namelbl12.Name = "namelbl12";
+            this.namelbl12.Size = new System.Drawing.Size(94, 20);
+            this.namelbl12.TabIndex = 31;
+            this.namelbl12.Tag = "";
+            this.namelbl12.Text = "Jolly Shake";
+            // 
+            // namelbl11
+            // 
+            this.namelbl11.AutoSize = true;
+            this.namelbl11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelbl11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.namelbl11.Location = new System.Drawing.Point(57, 654);
+            this.namelbl11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.namelbl11.Name = "namelbl11";
+            this.namelbl11.Size = new System.Drawing.Size(102, 20);
+            this.namelbl11.TabIndex = 30;
+            this.namelbl11.Text = "Spag Meal 1";
+            // 
+            // namelbl10
+            // 
+            this.namelbl10.AutoSize = true;
+            this.namelbl10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelbl10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.namelbl10.Location = new System.Drawing.Point(932, 443);
+            this.namelbl10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.namelbl10.Name = "namelbl10";
+            this.namelbl10.Size = new System.Drawing.Size(53, 20);
+            this.namelbl10.TabIndex = 29;
+            this.namelbl10.Text = "Name";
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             // 
             // pricelbl9
             // 
@@ -1009,6 +1323,7 @@
             this.pricelbl9.TabIndex = 48;
             this.pricelbl9.Text = "price";
             // 
+<<<<<<< HEAD
             // pricelbl8
             // 
             this.pricelbl8.AutoSize = true;
@@ -1274,13 +1589,45 @@
             // 
             // namelbl6
             // 
+=======
+            // namelbl8
+            // 
+            this.namelbl8.AutoSize = true;
+            this.namelbl8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelbl8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.namelbl8.Location = new System.Drawing.Point(487, 443);
+            this.namelbl8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.namelbl8.Name = "namelbl8";
+            this.namelbl8.Size = new System.Drawing.Size(53, 20);
+            this.namelbl8.TabIndex = 27;
+            this.namelbl8.Text = "Name";
+            // 
+            // namelbl7
+            // 
+            this.namelbl7.AutoSize = true;
+            this.namelbl7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelbl7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.namelbl7.Location = new System.Drawing.Point(277, 443);
+            this.namelbl7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.namelbl7.Name = "namelbl7";
+            this.namelbl7.Size = new System.Drawing.Size(53, 20);
+            this.namelbl7.TabIndex = 26;
+            this.namelbl7.Text = "Name";
+            // 
+            // namelbl6
+            // 
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             this.namelbl6.AutoSize = true;
             this.namelbl6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namelbl6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.namelbl6.Location = new System.Drawing.Point(52, 443);
             this.namelbl6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl6.Name = "namelbl6";
+<<<<<<< HEAD
             this.namelbl6.Size = new System.Drawing.Size(44, 16);
+=======
+            this.namelbl6.Size = new System.Drawing.Size(53, 20);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             this.namelbl6.TabIndex = 25;
             this.namelbl6.Text = "Name";
             // 
@@ -1445,7 +1792,11 @@
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label12.Location = new System.Drawing.Point(12, 89);
             this.label12.Name = "label12";
+<<<<<<< HEAD
             this.label12.Size = new System.Drawing.Size(55, 16);
+=======
+            this.label12.Size = new System.Drawing.Size(70, 20);
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
             this.label12.TabIndex = 112;
             this.label12.Text = "CPE301";
             // 
@@ -1599,7 +1950,11 @@
         private System.Windows.Forms.Label namelbl6;
         private System.Windows.Forms.Label namelbl7;
         private System.Windows.Forms.Label namelbl8;
+<<<<<<< HEAD
         private System.Windows.Forms.Label namelbl9;
+=======
+        private System.Windows.Forms.Label name9lbl;
+>>>>>>> 794e3a62c85947979ea24204521d7271d49abd68
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox12;
