@@ -51,10 +51,10 @@
             this.pricetextbox = new System.Windows.Forms.TextBox();
             this.quantitytxtbox = new System.Windows.Forms.TextBox();
             this.itemnametxtbox = new System.Windows.Forms.TextBox();
+            this.namelbl2 = new System.Windows.Forms.Label();
             this.namelbl5 = new System.Windows.Forms.Label();
             this.namelbl4 = new System.Windows.Forms.Label();
             this.namelbl3 = new System.Windows.Forms.Label();
-            this.namelbl2 = new System.Windows.Forms.Label();
             this.namelbl1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.changetxtbox = new System.Windows.Forms.TextBox();
@@ -84,6 +84,7 @@
             this.pricelbl19 = new System.Windows.Forms.Label();
             this.pricelbl18 = new System.Windows.Forms.Label();
             this.pricelbl17 = new System.Windows.Forms.Label();
+            this.pricelbl8 = new System.Windows.Forms.Label();
             this.pricelbl16 = new System.Windows.Forms.Label();
             this.pricelbl15 = new System.Windows.Forms.Label();
             this.pricelbl14 = new System.Windows.Forms.Label();
@@ -92,7 +93,6 @@
             this.pricelbl11 = new System.Windows.Forms.Label();
             this.pricelbl10 = new System.Windows.Forms.Label();
             this.pricelbl9 = new System.Windows.Forms.Label();
-            this.pricelbl8 = new System.Windows.Forms.Label();
             this.pricelbl7 = new System.Windows.Forms.Label();
             this.pricelbl6 = new System.Windows.Forms.Label();
             this.pricelbl5 = new System.Windows.Forms.Label();
@@ -161,7 +161,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(9, 18);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(0, 0);
             this.button1.TabIndex = 0;
@@ -334,11 +334,11 @@
             this.groupBox1.Controls.Add(this.quantitytxtbox);
             this.groupBox1.Controls.Add(this.itemnametxtbox);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox1.Name = "groupBox1";
             this.groupBox1.Location = new System.Drawing.Point(16, 129);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(692, 209);
+            this.groupBox1.Size = new System.Drawing.Size(643, 209);
             this.groupBox1.TabIndex = 110;
             this.groupBox1.TabStop = false;
             // 
@@ -432,15 +432,27 @@
             this.itemnametxtbox.Size = new System.Drawing.Size(351, 22);
             this.itemnametxtbox.TabIndex = 0;
             // 
+            // namelbl2
+            // 
+            this.namelbl2.AutoSize = true;
+            this.namelbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelbl2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.namelbl2.Location = new System.Drawing.Point(192, 184);
+            this.namelbl2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.namelbl2.Name = "namelbl2";
+            this.namelbl2.Size = new System.Drawing.Size(44, 16);
+            this.namelbl2.TabIndex = 21;
+            this.namelbl2.Text = "Name";
+            // 
             // namelbl5
             // 
             this.namelbl5.AutoSize = true;
             this.namelbl5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namelbl5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.namelbl5.Location = new System.Drawing.Point(933, 225);
+            this.namelbl5.Location = new System.Drawing.Point(694, 184);
             this.namelbl5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl5.Name = "namelbl5";
-            this.namelbl5.Size = new System.Drawing.Size(53, 20);
+            this.namelbl5.Size = new System.Drawing.Size(44, 16);
             this.namelbl5.TabIndex = 24;
             this.namelbl5.Text = "Name";
             // 
@@ -449,10 +461,10 @@
             this.namelbl4.AutoSize = true;
             this.namelbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namelbl4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.namelbl4.Location = new System.Drawing.Point(723, 225);
+            this.namelbl4.Location = new System.Drawing.Point(542, 184);
             this.namelbl4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl4.Name = "namelbl4";
-            this.namelbl4.Size = new System.Drawing.Size(53, 20);
+            this.namelbl4.Size = new System.Drawing.Size(44, 16);
             this.namelbl4.TabIndex = 23;
             this.namelbl4.Text = "Name";
             // 
@@ -461,34 +473,22 @@
             this.namelbl3.AutoSize = true;
             this.namelbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namelbl3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.namelbl3.Location = new System.Drawing.Point(499, 224);
+            this.namelbl3.Location = new System.Drawing.Point(374, 184);
             this.namelbl3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl3.Name = "namelbl3";
-            this.namelbl3.Size = new System.Drawing.Size(53, 20);
+            this.namelbl3.Size = new System.Drawing.Size(44, 16);
             this.namelbl3.TabIndex = 22;
             this.namelbl3.Text = "Name";
-            // 
-            // namelbl2
-            // 
-            this.namelbl2.AutoSize = true;
-            this.namelbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.namelbl2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.namelbl2.Location = new System.Drawing.Point(277, 225);
-            this.namelbl2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.namelbl2.Name = "namelbl2";
-            this.namelbl2.Size = new System.Drawing.Size(53, 20);
-            this.namelbl2.TabIndex = 21;
-            this.namelbl2.Text = "Name";
             // 
             // namelbl1
             // 
             this.namelbl1.AutoSize = true;
             this.namelbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namelbl1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.namelbl1.Location = new System.Drawing.Point(52, 225);
+            this.namelbl1.Location = new System.Drawing.Point(16, 184);
             this.namelbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl1.Name = "namelbl1";
-            this.namelbl1.Size = new System.Drawing.Size(53, 20);
+            this.namelbl1.Size = new System.Drawing.Size(44, 16);
             this.namelbl1.TabIndex = 20;
             this.namelbl1.Text = "Name";
             // 
@@ -496,7 +496,7 @@
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(252, 32);
+            this.pictureBox2.Location = new System.Drawing.Point(189, 23);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(166, 154);
@@ -528,8 +528,8 @@
             // pictureBox16
             // 
             this.pictureBox16.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox16.Location = new System.Drawing.Point(697, 570);
             this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
+            this.pictureBox16.Location = new System.Drawing.Point(697, 570);
             this.pictureBox16.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(164, 148);
@@ -541,8 +541,8 @@
             // pictureBox17
             // 
             this.pictureBox17.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox17.Location = new System.Drawing.Point(528, 570);
             this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
+            this.pictureBox17.Location = new System.Drawing.Point(528, 570);
             this.pictureBox17.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(164, 148);
@@ -554,8 +554,8 @@
             // pictureBox18
             // 
             this.pictureBox18.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox18.Location = new System.Drawing.Point(358, 570);
             this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
+            this.pictureBox18.Location = new System.Drawing.Point(358, 570);
             this.pictureBox18.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(166, 148);
@@ -567,8 +567,8 @@
             // pictureBox19
             // 
             this.pictureBox19.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox19.Location = new System.Drawing.Point(189, 570);
             this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
+            this.pictureBox19.Location = new System.Drawing.Point(189, 570);
             this.pictureBox19.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(166, 148);
@@ -580,8 +580,8 @@
             // pictureBox20
             // 
             this.pictureBox20.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox20.Location = new System.Drawing.Point(16, 570);
             this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
+            this.pictureBox20.Location = new System.Drawing.Point(16, 570);
             this.pictureBox20.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(168, 148);
@@ -781,12 +781,10 @@
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBox3.Location = new System.Drawing.Point(12, 387);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(519, 155);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(692, 191);
+            this.groupBox3.Size = new System.Drawing.Size(647, 151);
             this.groupBox3.TabIndex = 113;
             this.groupBox3.TabStop = false;
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
@@ -798,6 +796,7 @@
             this.groupBox4.Controls.Add(this.pricelbl19);
             this.groupBox4.Controls.Add(this.pricelbl18);
             this.groupBox4.Controls.Add(this.pricelbl17);
+            this.groupBox4.Controls.Add(this.pricelbl8);
             this.groupBox4.Controls.Add(this.pricelbl16);
             this.groupBox4.Controls.Add(this.pricelbl15);
             this.groupBox4.Controls.Add(this.pricelbl14);
@@ -806,12 +805,12 @@
             this.groupBox4.Controls.Add(this.pricelbl11);
             this.groupBox4.Controls.Add(this.pricelbl10);
             this.groupBox4.Controls.Add(this.pricelbl9);
-            this.groupBox4.Controls.Add(this.pricelbl8);
             this.groupBox4.Controls.Add(this.pricelbl7);
             this.groupBox4.Controls.Add(this.pricelbl6);
             this.groupBox4.Controls.Add(this.pricelbl5);
             this.groupBox4.Controls.Add(this.pricelbl4);
             this.groupBox4.Controls.Add(this.pricelbl3);
+            this.groupBox4.Controls.Add(this.namelbl2);
             this.groupBox4.Controls.Add(this.pricelbl2);
             this.groupBox4.Controls.Add(this.pricelbl1);
             this.groupBox4.Controls.Add(this.namelbl20);
@@ -832,7 +831,6 @@
             this.groupBox4.Controls.Add(this.namelbl5);
             this.groupBox4.Controls.Add(this.namelbl4);
             this.groupBox4.Controls.Add(this.namelbl3);
-            this.groupBox4.Controls.Add(this.namelbl2);
             this.groupBox4.Controls.Add(this.namelbl1);
             this.groupBox4.Controls.Add(this.pictureBox16);
             this.groupBox4.Controls.Add(this.pictureBox17);
@@ -856,9 +854,7 @@
             this.groupBox4.Controls.Add(this.pictureBox1);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox4.Location = new System.Drawing.Point(539, 20);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(878, 778);
+            this.groupBox4.Location = new System.Drawing.Point(667, 32);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
@@ -872,10 +868,10 @@
             this.pricelbl20.AutoSize = true;
             this.pricelbl20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pricelbl20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pricelbl20.Location = new System.Drawing.Point(1090, 896);
+            this.pricelbl20.Location = new System.Drawing.Point(821, 722);
             this.pricelbl20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl20.Name = "pricelbl20";
-            this.pricelbl20.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl20.Size = new System.Drawing.Size(37, 16);
             this.pricelbl20.TabIndex = 59;
             this.pricelbl20.Text = "price";
             // 
@@ -884,10 +880,10 @@
             this.pricelbl19.AutoSize = true;
             this.pricelbl19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pricelbl19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pricelbl19.Location = new System.Drawing.Point(866, 896);
+            this.pricelbl19.Location = new System.Drawing.Point(652, 722);
             this.pricelbl19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl19.Name = "pricelbl19";
-            this.pricelbl19.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl19.Size = new System.Drawing.Size(37, 16);
             this.pricelbl19.TabIndex = 58;
             this.pricelbl19.Text = "price";
             // 
@@ -896,10 +892,10 @@
             this.pricelbl18.AutoSize = true;
             this.pricelbl18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pricelbl18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pricelbl18.Location = new System.Drawing.Point(651, 896);
+            this.pricelbl18.Location = new System.Drawing.Point(487, 722);
             this.pricelbl18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl18.Name = "pricelbl18";
-            this.pricelbl18.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl18.Size = new System.Drawing.Size(37, 16);
             this.pricelbl18.TabIndex = 57;
             this.pricelbl18.Text = "price";
             // 
@@ -908,22 +904,34 @@
             this.pricelbl17.AutoSize = true;
             this.pricelbl17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pricelbl17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pricelbl17.Location = new System.Drawing.Point(416, 898);
+            this.pricelbl17.Location = new System.Drawing.Point(318, 722);
             this.pricelbl17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl17.Name = "pricelbl17";
-            this.pricelbl17.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl17.Size = new System.Drawing.Size(37, 16);
             this.pricelbl17.TabIndex = 56;
             this.pricelbl17.Text = "price";
+            // 
+            // pricelbl8
+            // 
+            this.pricelbl8.AutoSize = true;
+            this.pricelbl8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pricelbl8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pricelbl8.Location = new System.Drawing.Point(482, 360);
+            this.pricelbl8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.pricelbl8.Name = "pricelbl8";
+            this.pricelbl8.Size = new System.Drawing.Size(37, 16);
+            this.pricelbl8.TabIndex = 47;
+            this.pricelbl8.Text = "price";
             // 
             // pricelbl16
             // 
             this.pricelbl16.AutoSize = true;
             this.pricelbl16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pricelbl16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pricelbl16.Location = new System.Drawing.Point(173, 896);
+            this.pricelbl16.Location = new System.Drawing.Point(145, 722);
             this.pricelbl16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl16.Name = "pricelbl16";
-            this.pricelbl16.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl16.Size = new System.Drawing.Size(37, 16);
             this.pricelbl16.TabIndex = 55;
             this.pricelbl16.Text = "price";
             // 
@@ -932,10 +940,10 @@
             this.pricelbl15.AutoSize = true;
             this.pricelbl15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pricelbl15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pricelbl15.Location = new System.Drawing.Point(1090, 654);
+            this.pricelbl15.Location = new System.Drawing.Point(824, 529);
             this.pricelbl15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl15.Name = "pricelbl15";
-            this.pricelbl15.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl15.Size = new System.Drawing.Size(37, 16);
             this.pricelbl15.TabIndex = 54;
             this.pricelbl15.Text = "price";
             // 
@@ -944,10 +952,10 @@
             this.pricelbl14.AutoSize = true;
             this.pricelbl14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pricelbl14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pricelbl14.Location = new System.Drawing.Point(866, 654);
+            this.pricelbl14.Location = new System.Drawing.Point(655, 529);
             this.pricelbl14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl14.Name = "pricelbl14";
-            this.pricelbl14.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl14.Size = new System.Drawing.Size(37, 16);
             this.pricelbl14.TabIndex = 53;
             this.pricelbl14.Text = "price";
             // 
@@ -956,10 +964,10 @@
             this.pricelbl13.AutoSize = true;
             this.pricelbl13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pricelbl13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pricelbl13.Location = new System.Drawing.Point(651, 654);
+            this.pricelbl13.Location = new System.Drawing.Point(482, 529);
             this.pricelbl13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl13.Name = "pricelbl13";
-            this.pricelbl13.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl13.Size = new System.Drawing.Size(37, 16);
             this.pricelbl13.TabIndex = 52;
             this.pricelbl13.Text = "price";
             // 
@@ -968,10 +976,10 @@
             this.pricelbl12.AutoSize = true;
             this.pricelbl12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pricelbl12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pricelbl12.Location = new System.Drawing.Point(416, 656);
+            this.pricelbl12.Location = new System.Drawing.Point(326, 529);
             this.pricelbl12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl12.Name = "pricelbl12";
-            this.pricelbl12.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl12.Size = new System.Drawing.Size(37, 16);
             this.pricelbl12.TabIndex = 51;
             this.pricelbl12.Text = "price";
             // 
@@ -980,10 +988,10 @@
             this.pricelbl11.AutoSize = true;
             this.pricelbl11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pricelbl11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pricelbl11.Location = new System.Drawing.Point(173, 654);
+            this.pricelbl11.Location = new System.Drawing.Point(153, 529);
             this.pricelbl11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl11.Name = "pricelbl11";
-            this.pricelbl11.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl11.Size = new System.Drawing.Size(37, 16);
             this.pricelbl11.TabIndex = 50;
             this.pricelbl11.Text = "price";
             // 
@@ -992,10 +1000,10 @@
             this.pricelbl10.AutoSize = true;
             this.pricelbl10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pricelbl10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pricelbl10.Location = new System.Drawing.Point(1090, 443);
+            this.pricelbl10.Location = new System.Drawing.Point(824, 362);
             this.pricelbl10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl10.Name = "pricelbl10";
-            this.pricelbl10.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl10.Size = new System.Drawing.Size(37, 16);
             this.pricelbl10.TabIndex = 49;
             this.pricelbl10.Text = "price";
             // 
@@ -1004,34 +1012,22 @@
             this.pricelbl9.AutoSize = true;
             this.pricelbl9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pricelbl9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pricelbl9.Location = new System.Drawing.Point(866, 443);
+            this.pricelbl9.Location = new System.Drawing.Point(655, 364);
             this.pricelbl9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl9.Name = "pricelbl9";
-            this.pricelbl9.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl9.Size = new System.Drawing.Size(37, 16);
             this.pricelbl9.TabIndex = 48;
             this.pricelbl9.Text = "price";
-            // 
-            // pricelbl8
-            // 
-            this.pricelbl8.AutoSize = true;
-            this.pricelbl8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pricelbl8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pricelbl8.Location = new System.Drawing.Point(629, 443);
-            this.pricelbl8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.pricelbl8.Name = "pricelbl8";
-            this.pricelbl8.Size = new System.Drawing.Size(46, 20);
-            this.pricelbl8.TabIndex = 47;
-            this.pricelbl8.Text = "price";
             // 
             // pricelbl7
             // 
             this.pricelbl7.AutoSize = true;
             this.pricelbl7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pricelbl7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pricelbl7.Location = new System.Drawing.Point(416, 445);
+            this.pricelbl7.Location = new System.Drawing.Point(313, 362);
             this.pricelbl7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl7.Name = "pricelbl7";
-            this.pricelbl7.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl7.Size = new System.Drawing.Size(37, 16);
             this.pricelbl7.TabIndex = 46;
             this.pricelbl7.Text = "price";
             // 
@@ -1040,10 +1036,10 @@
             this.pricelbl6.AutoSize = true;
             this.pricelbl6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pricelbl6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pricelbl6.Location = new System.Drawing.Point(173, 443);
+            this.pricelbl6.Location = new System.Drawing.Point(147, 362);
             this.pricelbl6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl6.Name = "pricelbl6";
-            this.pricelbl6.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl6.Size = new System.Drawing.Size(37, 16);
             this.pricelbl6.TabIndex = 45;
             this.pricelbl6.Text = "price";
             // 
@@ -1052,10 +1048,10 @@
             this.pricelbl5.AutoSize = true;
             this.pricelbl5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pricelbl5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pricelbl5.Location = new System.Drawing.Point(1090, 225);
+            this.pricelbl5.Location = new System.Drawing.Point(821, 184);
             this.pricelbl5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl5.Name = "pricelbl5";
-            this.pricelbl5.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl5.Size = new System.Drawing.Size(37, 16);
             this.pricelbl5.TabIndex = 44;
             this.pricelbl5.Text = "price";
             // 
@@ -1064,10 +1060,10 @@
             this.pricelbl4.AutoSize = true;
             this.pricelbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pricelbl4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pricelbl4.Location = new System.Drawing.Point(866, 225);
+            this.pricelbl4.Location = new System.Drawing.Point(649, 188);
             this.pricelbl4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl4.Name = "pricelbl4";
-            this.pricelbl4.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl4.Size = new System.Drawing.Size(37, 16);
             this.pricelbl4.TabIndex = 43;
             this.pricelbl4.Text = "price";
             // 
@@ -1076,10 +1072,10 @@
             this.pricelbl3.AutoSize = true;
             this.pricelbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pricelbl3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pricelbl3.Location = new System.Drawing.Point(629, 225);
+            this.pricelbl3.Location = new System.Drawing.Point(487, 184);
             this.pricelbl3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl3.Name = "pricelbl3";
-            this.pricelbl3.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl3.Size = new System.Drawing.Size(37, 16);
             this.pricelbl3.TabIndex = 42;
             this.pricelbl3.Text = "price";
             // 
@@ -1088,10 +1084,10 @@
             this.pricelbl2.AutoSize = true;
             this.pricelbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pricelbl2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pricelbl2.Location = new System.Drawing.Point(416, 227);
+            this.pricelbl2.Location = new System.Drawing.Point(313, 184);
             this.pricelbl2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl2.Name = "pricelbl2";
-            this.pricelbl2.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl2.Size = new System.Drawing.Size(37, 16);
             this.pricelbl2.TabIndex = 41;
             this.pricelbl2.Text = "price";
             // 
@@ -1100,10 +1096,10 @@
             this.pricelbl1.AutoSize = true;
             this.pricelbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pricelbl1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pricelbl1.Location = new System.Drawing.Point(173, 225);
+            this.pricelbl1.Location = new System.Drawing.Point(147, 184);
             this.pricelbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pricelbl1.Name = "pricelbl1";
-            this.pricelbl1.Size = new System.Drawing.Size(46, 20);
+            this.pricelbl1.Size = new System.Drawing.Size(37, 16);
             this.pricelbl1.TabIndex = 40;
             this.pricelbl1.Text = "price";
             // 
@@ -1112,10 +1108,10 @@
             this.namelbl20.AutoSize = true;
             this.namelbl20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namelbl20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.namelbl20.Location = new System.Drawing.Point(951, 895);
+            this.namelbl20.Location = new System.Drawing.Point(697, 722);
             this.namelbl20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl20.Name = "namelbl20";
-            this.namelbl20.Size = new System.Drawing.Size(154, 20);
+            this.namelbl20.Size = new System.Drawing.Size(120, 16);
             this.namelbl20.TabIndex = 39;
             this.namelbl20.Text = "KFC Family Meal B";
             // 
@@ -1124,10 +1120,10 @@
             this.namelbl19.AutoSize = true;
             this.namelbl19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namelbl19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.namelbl19.Location = new System.Drawing.Point(723, 895);
+            this.namelbl19.Location = new System.Drawing.Point(528, 722);
             this.namelbl19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl19.Name = "namelbl19";
-            this.namelbl19.Size = new System.Drawing.Size(157, 20);
+            this.namelbl19.Size = new System.Drawing.Size(124, 16);
             this.namelbl19.TabIndex = 38;
             this.namelbl19.Text = "KFC Combo Meal A";
             // 
@@ -1136,10 +1132,10 @@
             this.namelbl18.AutoSize = true;
             this.namelbl18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namelbl18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.namelbl18.Location = new System.Drawing.Point(495, 891);
+            this.namelbl18.Location = new System.Drawing.Point(367, 722);
             this.namelbl18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl18.Name = "namelbl18";
-            this.namelbl18.Size = new System.Drawing.Size(162, 40);
+            this.namelbl18.Size = new System.Drawing.Size(129, 32);
             this.namelbl18.TabIndex = 37;
             this.namelbl18.Text = "Burger and Checken\r\nMeal C";
             // 
@@ -1148,10 +1144,10 @@
             this.namelbl17.AutoSize = true;
             this.namelbl17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namelbl17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.namelbl17.Location = new System.Drawing.Point(273, 896);
+            this.namelbl17.Location = new System.Drawing.Point(192, 722);
             this.namelbl17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl17.Name = "namelbl17";
-            this.namelbl17.Size = new System.Drawing.Size(158, 20);
+            this.namelbl17.Size = new System.Drawing.Size(123, 16);
             this.namelbl17.TabIndex = 36;
             this.namelbl17.Text = "KFC ChowFun Meal";
             // 
@@ -1160,10 +1156,10 @@
             this.namelbl16.AutoSize = true;
             this.namelbl16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namelbl16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.namelbl16.Location = new System.Drawing.Point(48, 892);
+            this.namelbl16.Location = new System.Drawing.Point(16, 722);
             this.namelbl16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl16.Name = "namelbl16";
-            this.namelbl16.Size = new System.Drawing.Size(117, 40);
+            this.namelbl16.Size = new System.Drawing.Size(91, 32);
             this.namelbl16.TabIndex = 35;
             this.namelbl16.Text = "KFC Checken \r\nStrips Meal";
             // 
@@ -1172,10 +1168,10 @@
             this.namelbl15.AutoSize = true;
             this.namelbl15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namelbl15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.namelbl15.Location = new System.Drawing.Point(948, 654);
+            this.namelbl15.Location = new System.Drawing.Point(700, 529);
             this.namelbl15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl15.Name = "namelbl15";
-            this.namelbl15.Size = new System.Drawing.Size(155, 20);
+            this.namelbl15.Size = new System.Drawing.Size(121, 16);
             this.namelbl15.TabIndex = 34;
             this.namelbl15.Text = "KFC Family MEal A";
             // 
@@ -1183,7 +1179,7 @@
             // 
             this.namelbl14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namelbl14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.namelbl14.Location = new System.Drawing.Point(719, 654);
+            this.namelbl14.Location = new System.Drawing.Point(527, 529);
             this.namelbl14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl14.Name = "namelbl14";
             this.namelbl14.Size = new System.Drawing.Size(139, 40);
@@ -1195,10 +1191,10 @@
             this.namelbl13.AutoSize = true;
             this.namelbl13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namelbl13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.namelbl13.Location = new System.Drawing.Point(489, 654);
+            this.namelbl13.Location = new System.Drawing.Point(371, 529);
             this.namelbl13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl13.Name = "namelbl13";
-            this.namelbl13.Size = new System.Drawing.Size(161, 40);
+            this.namelbl13.Size = new System.Drawing.Size(125, 32);
             this.namelbl13.TabIndex = 32;
             this.namelbl13.Text = "KFC Burger Combo \r\nMeal 1";
             // 
@@ -1207,10 +1203,10 @@
             this.namelbl12.AutoSize = true;
             this.namelbl12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namelbl12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.namelbl12.Location = new System.Drawing.Point(273, 654);
+            this.namelbl12.Location = new System.Drawing.Point(192, 529);
             this.namelbl12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl12.Name = "namelbl12";
-            this.namelbl12.Size = new System.Drawing.Size(94, 20);
+            this.namelbl12.Size = new System.Drawing.Size(77, 16);
             this.namelbl12.TabIndex = 31;
             this.namelbl12.Tag = "";
             this.namelbl12.Text = "Jolly Shake";
@@ -1220,10 +1216,10 @@
             this.namelbl11.AutoSize = true;
             this.namelbl11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namelbl11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.namelbl11.Location = new System.Drawing.Point(57, 654);
+            this.namelbl11.Location = new System.Drawing.Point(22, 529);
             this.namelbl11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl11.Name = "namelbl11";
-            this.namelbl11.Size = new System.Drawing.Size(102, 20);
+            this.namelbl11.Size = new System.Drawing.Size(83, 16);
             this.namelbl11.TabIndex = 30;
             this.namelbl11.Text = "Spag Meal 1";
             // 
@@ -1232,10 +1228,10 @@
             this.namelbl10.AutoSize = true;
             this.namelbl10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namelbl10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.namelbl10.Location = new System.Drawing.Point(932, 443);
+            this.namelbl10.Location = new System.Drawing.Point(700, 356);
             this.namelbl10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl10.Name = "namelbl10";
-            this.namelbl10.Size = new System.Drawing.Size(53, 20);
+            this.namelbl10.Size = new System.Drawing.Size(44, 16);
             this.namelbl10.TabIndex = 29;
             this.namelbl10.Text = "Name";
             // 
@@ -1255,10 +1251,10 @@
             this.namelbl8.AutoSize = true;
             this.namelbl8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namelbl8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.namelbl8.Location = new System.Drawing.Point(487, 443);
+            this.namelbl8.Location = new System.Drawing.Point(371, 362);
             this.namelbl8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl8.Name = "namelbl8";
-            this.namelbl8.Size = new System.Drawing.Size(53, 20);
+            this.namelbl8.Size = new System.Drawing.Size(44, 16);
             this.namelbl8.TabIndex = 27;
             this.namelbl8.Text = "Name";
             // 
@@ -1267,10 +1263,10 @@
             this.namelbl7.AutoSize = true;
             this.namelbl7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namelbl7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.namelbl7.Location = new System.Drawing.Point(277, 443);
+            this.namelbl7.Location = new System.Drawing.Point(192, 364);
             this.namelbl7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl7.Name = "namelbl7";
-            this.namelbl7.Size = new System.Drawing.Size(53, 20);
+            this.namelbl7.Size = new System.Drawing.Size(44, 16);
             this.namelbl7.TabIndex = 26;
             this.namelbl7.Text = "Name";
             // 
@@ -1279,10 +1275,10 @@
             this.namelbl6.AutoSize = true;
             this.namelbl6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namelbl6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.namelbl6.Location = new System.Drawing.Point(52, 443);
+            this.namelbl6.Location = new System.Drawing.Point(22, 362);
             this.namelbl6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.namelbl6.Name = "namelbl6";
-            this.namelbl6.Size = new System.Drawing.Size(53, 20);
+            this.namelbl6.Size = new System.Drawing.Size(44, 16);
             this.namelbl6.TabIndex = 25;
             this.namelbl6.Text = "Name";
             // 
@@ -1381,9 +1377,9 @@
             this.coffeeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.coffeeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.coffeeBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.coffeeBtn.Location = new System.Drawing.Point(367, 680);
+            this.coffeeBtn.Location = new System.Drawing.Point(447, 696);
             this.coffeeBtn.Name = "coffeeBtn";
-            this.coffeeBtn.Size = new System.Drawing.Size(165, 118);
+            this.coffeeBtn.Size = new System.Drawing.Size(183, 137);
             this.coffeeBtn.TabIndex = 129;
             this.coffeeBtn.Text = "COFFEE";
             this.coffeeBtn.UseVisualStyleBackColor = false;
@@ -1394,9 +1390,9 @@
             this.beveragesBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.beveragesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.beveragesBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.beveragesBtn.Location = new System.Drawing.Point(188, 680);
+            this.beveragesBtn.Location = new System.Drawing.Point(240, 696);
             this.beveragesBtn.Name = "beveragesBtn";
-            this.beveragesBtn.Size = new System.Drawing.Size(178, 118);
+            this.beveragesBtn.Size = new System.Drawing.Size(198, 137);
             this.beveragesBtn.TabIndex = 127;
             this.beveragesBtn.Text = "BEVERAGES";
             this.beveragesBtn.UseVisualStyleBackColor = false;
@@ -1407,9 +1403,9 @@
             this.dessertsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.dessertsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dessertsBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dessertsBtn.Location = new System.Drawing.Point(367, 548);
+            this.dessertsBtn.Location = new System.Drawing.Point(447, 548);
             this.dessertsBtn.Name = "dessertsBtn";
-            this.dessertsBtn.Size = new System.Drawing.Size(164, 129);
+            this.dessertsBtn.Size = new System.Drawing.Size(183, 142);
             this.dessertsBtn.TabIndex = 122;
             this.dessertsBtn.Text = "DESSERTS";
             this.dessertsBtn.UseVisualStyleBackColor = false;
@@ -1420,7 +1416,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label14.Location = new System.Drawing.Point(444, 89);
+            this.label14.Location = new System.Drawing.Point(566, 89);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(84, 16);
             this.label14.TabIndex = 117;
@@ -1444,7 +1440,7 @@
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label12.Location = new System.Drawing.Point(12, 89);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(62, 16);
+            this.label12.Size = new System.Drawing.Size(55, 16);
             this.label12.TabIndex = 112;
             this.label12.Text = "CPE301";
             // 
@@ -1453,9 +1449,9 @@
             this.lunchBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lunchBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lunchBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lunchBtn.Location = new System.Drawing.Point(188, 548);
+            this.lunchBtn.Location = new System.Drawing.Point(240, 548);
             this.lunchBtn.Name = "lunchBtn";
-            this.lunchBtn.Size = new System.Drawing.Size(178, 129);
+            this.lunchBtn.Size = new System.Drawing.Size(198, 142);
             this.lunchBtn.TabIndex = 120;
             this.lunchBtn.Text = "LUNCH";
             this.lunchBtn.UseVisualStyleBackColor = false;
@@ -1466,9 +1462,9 @@
             this.breakfastBrn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.breakfastBrn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.breakfastBrn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.breakfastBrn.Location = new System.Drawing.Point(12, 680);
+            this.breakfastBrn.Location = new System.Drawing.Point(25, 696);
             this.breakfastBrn.Name = "breakfastBrn";
-            this.breakfastBrn.Size = new System.Drawing.Size(170, 118);
+            this.breakfastBrn.Size = new System.Drawing.Size(209, 137);
             this.breakfastBrn.TabIndex = 135;
             this.breakfastBrn.Text = "BREAKFAST";
             this.breakfastBrn.UseVisualStyleBackColor = false;
@@ -1479,9 +1475,9 @@
             this.dinnerBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.dinnerBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dinnerBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dinnerBtn.Location = new System.Drawing.Point(12, 548);
+            this.dinnerBtn.Location = new System.Drawing.Point(25, 548);
             this.dinnerBtn.Name = "dinnerBtn";
-            this.dinnerBtn.Size = new System.Drawing.Size(170, 129);
+            this.dinnerBtn.Size = new System.Drawing.Size(209, 139);
             this.dinnerBtn.TabIndex = 134;
             this.dinnerBtn.Text = "DINNER";
             this.dinnerBtn.UseVisualStyleBackColor = false;
@@ -1491,7 +1487,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1540, 845);
             this.Controls.Add(this.breakfastBrn);
             this.Controls.Add(this.dinnerBtn);
             this.Controls.Add(this.groupBox1);
@@ -1507,7 +1503,7 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.lunchBtn);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "POS_Cashier_Interface";
             this.Text = "Payroll 21";
             this.Load += new System.EventHandler(this.Form1_Load);
