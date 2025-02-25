@@ -44,9 +44,6 @@ namespace New_POS_Application
         /// <param name="e"></param>
         private void dinnerBtn_Click(object sender, EventArgs e)
         {
-            // default the first option
-            itemnametxtbox.Text = name1lbl.Text;
-            gl_price = 120.0;
 
 
             String specificContext = "\\dinner\\d";
@@ -72,35 +69,32 @@ namespace New_POS_Application
             pictureBox19.Image = Image.FromFile(baseString + specificContext + "19.jfif");
             pictureBox20.Image = Image.FromFile(baseString + specificContext + "20.jfif");
 
-            name1lbl.Text = whatPack + " 1";
-            name2lbl.Text = whatPack + " 2";
-            name3lbl.Text = whatPack + " 3";
-            name4lbl.Text = whatPack + " 4";
-            name5lbl.Text = whatPack + " 5";
-            name6lbl.Text = whatPack + " 6";
-            name7lbl.Text = whatPack + " 7";
-            name8lbl.Text = whatPack + " 8";
+            namelbl1.Text = whatPack + " 1";
+            namelbl2.Text = whatPack + " 2";
+            namelbl3.Text = whatPack + " 3";
+            namelbl4.Text = whatPack + " 4";
+            namelbl5.Text = whatPack + " 5";
+            namelbl6.Text = whatPack + " 6";
+            namelbl7.Text = whatPack + " 7";
+            namelbl8.Text = whatPack + " 8";
             name9lbl.Text = whatPack + " 9";
-            name10lbl.Text = whatPack + " 10";
-            name11lbl.Text = whatPack + " 11";
-            name12lbl.Text = whatPack + " 12";
-            name13lbl.Text = whatPack + " 13";
-            name14lbl.Text = whatPack + " 14";
-            name15lbl.Text = whatPack + " 15";
-            name16lbl.Text = whatPack + " 16";
-            name17lbl.Text = whatPack + " 17";
-            name18lbl.Text = whatPack + " 18";
-            name19lbl.Text = whatPack + " 19";
-            name20lbl.Text = whatPack + " 20";
+            namelbl10.Text = whatPack + " 10";
+            namelbl11.Text = whatPack + " 11";
+            namelbl12.Text = whatPack + " 12";
+            namelbl13.Text = whatPack + " 13";
+            namelbl14.Text = whatPack + " 14";
+            namelbl15.Text = whatPack + " 15";
+            namelbl16.Text = whatPack + " 16";
+            namelbl17.Text = whatPack + " 17";
+            namelbl18.Text = whatPack + " 18";
+            namelbl19.Text = whatPack + " 19";
+            namelbl20.Text = whatPack + " 20";
 
 
 
         }
         private void lunchBtn_Click(object sender, EventArgs e)
         {
-            // default the first option
-            itemnametxtbox.Text = name1lbl.Text;
-            gl_price = 150.0;
 
 
             String specificContext = "\\lunch\\l";
@@ -126,33 +120,30 @@ namespace New_POS_Application
             pictureBox19.Image = Image.FromFile(baseString + specificContext + "19.jfif");
             pictureBox20.Image = Image.FromFile(baseString + specificContext + "20.jfif");
 
-            name1lbl.Text = whatPack + " 1";
-            name2lbl.Text = whatPack + " 2";
-            name3lbl.Text = whatPack + " 3";
-            name4lbl.Text = whatPack + " 4";
-            name5lbl.Text = whatPack + " 5";
-            name6lbl.Text = whatPack + " 6";
-            name7lbl.Text = whatPack + " 7";
-            name8lbl.Text = whatPack + " 8";
+            namelbl1.Text = whatPack + " 1";
+            namelbl2.Text = whatPack + " 2";
+            namelbl3.Text = whatPack + " 3";
+            namelbl4.Text = whatPack + " 4";
+            namelbl5.Text = whatPack + " 5";
+            namelbl6.Text = whatPack + " 6";
+            namelbl7.Text = whatPack + " 7";
+            namelbl8.Text = whatPack + " 8";
             name9lbl.Text = whatPack + " 9";
-            name10lbl.Text = whatPack + " 10";
-            name11lbl.Text = whatPack + " 11";
-            name12lbl.Text = whatPack + " 12";
-            name13lbl.Text = whatPack + " 13";
-            name14lbl.Text = whatPack + " 14";
-            name15lbl.Text = whatPack + " 15";
-            name16lbl.Text = whatPack + " 16";
-            name17lbl.Text = whatPack + " 17";
-            name18lbl.Text = whatPack + " 18";
-            name19lbl.Text = whatPack + " 19";
-            name20lbl.Text = whatPack + " 20";
+            namelbl10.Text = whatPack + " 10";
+            namelbl11.Text = whatPack + " 11";
+            namelbl12.Text = whatPack + " 12";
+            namelbl13.Text = whatPack + " 13";
+            namelbl14.Text = whatPack + " 14";
+            namelbl15.Text = whatPack + " 15";
+            namelbl16.Text = whatPack + " 16";
+            namelbl17.Text = whatPack + " 17";
+            namelbl18.Text = whatPack + " 18";
+            namelbl19.Text = whatPack + " 19";
+            namelbl20.Text = whatPack + " 20";
         }
 
         private void dessertsBtn_Click(object sender, EventArgs e)
         {
-            // default the first option
-            itemnametxtbox.Text = name1lbl.Text;
-            gl_price = 100.0;
 
 
             String specificContext = "\\dessert\\s";
@@ -178,33 +169,30 @@ namespace New_POS_Application
             pictureBox19.Image = Image.FromFile(baseString + specificContext + "19.jfif");
             pictureBox20.Image = Image.FromFile(baseString + specificContext + "20.jfif");
 
-            name1lbl.Text = whatPack + " 1";
-            name2lbl.Text = whatPack + " 2";
-            name3lbl.Text = whatPack + " 3";
-            name4lbl.Text = whatPack + " 4";
-            name5lbl.Text = whatPack + " 5";
-            name6lbl.Text = whatPack + " 6";
-            name7lbl.Text = whatPack + " 7";
-            name8lbl.Text = whatPack + " 8";
+            namelbl1.Text = whatPack + " 1";
+            namelbl2.Text = whatPack + " 2";
+            namelbl3.Text = whatPack + " 3";
+            namelbl4.Text = whatPack + " 4";
+            namelbl5.Text = whatPack + " 5";
+            namelbl6.Text = whatPack + " 6";
+            namelbl7.Text = whatPack + " 7";
+            namelbl8.Text = whatPack + " 8";
             name9lbl.Text = whatPack + " 9";
-            name10lbl.Text = whatPack + " 10";
-            name11lbl.Text = whatPack + " 11";
-            name12lbl.Text = whatPack + " 12";
-            name13lbl.Text = whatPack + " 13";
-            name14lbl.Text = whatPack + " 14";
-            name15lbl.Text = whatPack + " 15";
-            name16lbl.Text = whatPack + " 16";
-            name17lbl.Text = whatPack + " 17";
-            name18lbl.Text = whatPack + " 18";
-            name19lbl.Text = whatPack + " 19";
-            name20lbl.Text = whatPack + " 20";
+            namelbl10.Text = whatPack + " 10";
+            namelbl11.Text = whatPack + " 11";
+            namelbl12.Text = whatPack + " 12";
+            namelbl13.Text = whatPack + " 13";
+            namelbl14.Text = whatPack + " 14";
+            namelbl15.Text = whatPack + " 15";
+            namelbl16.Text = whatPack + " 16";
+            namelbl17.Text = whatPack + " 17";
+            namelbl18.Text = whatPack + " 18";
+            namelbl19.Text = whatPack + " 19";
+            namelbl20.Text = whatPack + " 20";
         }
 
         private void breakfastBrn_Click(object sender, EventArgs e)
         {
-            // default the first option
-            itemnametxtbox.Text = name1lbl.Text;
-            gl_price = 200.0;
 
             String specificContext = "\\breakfast\\b";
             String whatPack = "Breakfast Pack";
@@ -229,33 +217,30 @@ namespace New_POS_Application
             pictureBox19.Image = Image.FromFile(baseString + specificContext + "19.jfif");
             pictureBox20.Image = Image.FromFile(baseString + specificContext + "20.jfif");
 
-            name1lbl.Text = whatPack + " 1";
-            name2lbl.Text = whatPack + " 2";
-            name3lbl.Text = whatPack + " 3";
-            name4lbl.Text = whatPack + " 4";
-            name5lbl.Text = whatPack + " 5";
-            name6lbl.Text = whatPack + " 6";
-            name7lbl.Text = whatPack + " 7";
-            name8lbl.Text = whatPack + " 8";
+            namelbl1.Text = whatPack + " 1";
+            namelbl2.Text = whatPack + " 2";
+            namelbl3.Text = whatPack + " 3";
+            namelbl4.Text = whatPack + " 4";
+            namelbl5.Text = whatPack + " 5";
+            namelbl6.Text = whatPack + " 6";
+            namelbl7.Text = whatPack + " 7";
+            namelbl8.Text = whatPack + " 8";
             name9lbl.Text = whatPack + " 9";
-            name10lbl.Text = whatPack + " 10";
-            name11lbl.Text = whatPack + " 11";
-            name12lbl.Text = whatPack + " 12";
-            name13lbl.Text = whatPack + " 13";
-            name14lbl.Text = whatPack + " 14";
-            name15lbl.Text = whatPack + " 15";
-            name16lbl.Text = whatPack + " 16";
-            name17lbl.Text = whatPack + " 17";
-            name18lbl.Text = whatPack + " 18";
-            name19lbl.Text = whatPack + " 19";
-            name20lbl.Text = whatPack + " 20";
+            namelbl10.Text = whatPack + " 10";
+            namelbl11.Text = whatPack + " 11";
+            namelbl12.Text = whatPack + " 12";
+            namelbl13.Text = whatPack + " 13";
+            namelbl14.Text = whatPack + " 14";
+            namelbl15.Text = whatPack + " 15";
+            namelbl16.Text = whatPack + " 16";
+            namelbl17.Text = whatPack + " 17";
+            namelbl18.Text = whatPack + " 18";
+            namelbl19.Text = whatPack + " 19";
+            namelbl20.Text = whatPack + " 20";
         }
 
         private void beveragesBtn_Click(object sender, EventArgs e)
         {
-            // default the first option
-            itemnametxtbox.Text = name1lbl.Text;
-            gl_price = 90.0;
 
 
             String specificContext = "\\beverages\\";
@@ -282,35 +267,32 @@ namespace New_POS_Application
             pictureBox20.Image = Image.FromFile(baseString + specificContext + "tea7.jfif");
 
 
-            name1lbl.Text = whatPack + " 1";
-            name2lbl.Text = whatPack + " 2";
-            name3lbl.Text = whatPack + " 3";
-            name4lbl.Text = whatPack + " 4";
-            name5lbl.Text = whatPack + " 5";
-            name6lbl.Text = whatPack + " 6";
-            name7lbl.Text = whatPack + " 7";
-            name8lbl.Text = whatPack + " 8";
+            namelbl1.Text = whatPack + " 1";
+            namelbl2.Text = whatPack + " 2";
+            namelbl3.Text = whatPack + " 3";
+            namelbl4.Text = whatPack + " 4";
+            namelbl5.Text = whatPack + " 5";
+            namelbl6.Text = whatPack + " 6";
+            namelbl7.Text = whatPack + " 7";
+            namelbl8.Text = whatPack + " 8";
             name9lbl.Text = whatPack + " 9";
-            name10lbl.Text = whatPack + " 10";
-            name11lbl.Text = whatPack + " 11";
-            name12lbl.Text = whatPack + " 12";
-            name13lbl.Text = whatPack + " 13";
-            name14lbl.Text = whatPack + " 14";
-            name15lbl.Text = whatPack + " 15";
-            name16lbl.Text = whatPack + " 16";
-            name17lbl.Text = whatPack + " 17";
-            name18lbl.Text = whatPack + " 18";
-            name19lbl.Text = whatPack + " 19";
-            name20lbl.Text = whatPack + " 20";
+            namelbl10.Text = whatPack + " 10";
+            namelbl11.Text = whatPack + " 11";
+            namelbl12.Text = whatPack + " 12";
+            namelbl13.Text = whatPack + " 13";
+            namelbl14.Text = whatPack + " 14";
+            namelbl15.Text = whatPack + " 15";
+            namelbl16.Text = whatPack + " 16";
+            namelbl17.Text = whatPack + " 17";
+            namelbl18.Text = whatPack + " 18";
+            namelbl19.Text = whatPack + " 19";
+            namelbl20.Text = whatPack + " 20";
 
         }
 
         private void coffeeBtn_Click(object sender, EventArgs e)
         {
 
-            // default the first option
-            itemnametxtbox.Text = name1lbl.Text;
-            gl_price = 12.0;
 
             String specificContext = "\\coffee\\c";
             String whatPack = "Coffee Pack";
@@ -336,78 +318,76 @@ namespace New_POS_Application
             pictureBox20.Image = Image.FromFile(baseString + specificContext + "20.jfif");
 
 
-            name1lbl.Text = whatPack + " 1";
-            name2lbl.Text = whatPack + " 2";
-            name3lbl.Text = whatPack + " 3";
-            name4lbl.Text = whatPack + " 4";
-            name5lbl.Text = whatPack + " 5";
-            name6lbl.Text = whatPack + " 6";
-            name7lbl.Text = whatPack + " 7";
-            name8lbl.Text = whatPack + " 8";
+            namelbl1.Text = whatPack + " 1";
+            namelbl2.Text = whatPack + " 2";
+            namelbl3.Text = whatPack + " 3";
+            namelbl4.Text = whatPack + " 4";
+            namelbl5.Text = whatPack + " 5";
+            namelbl6.Text = whatPack + " 6";
+            namelbl7.Text = whatPack + " 7";
+            namelbl8.Text = whatPack + " 8";
             name9lbl.Text = whatPack + " 9";
-            name10lbl.Text = whatPack + " 10";
-            name11lbl.Text = whatPack + " 11";
-            name12lbl.Text = whatPack + " 12";
-            name13lbl.Text = whatPack + " 13";
-            name14lbl.Text = whatPack + " 14";
-            name15lbl.Text = whatPack + " 15";
-            name16lbl.Text = whatPack + " 16";
-            name17lbl.Text = whatPack + " 17";
-            name18lbl.Text = whatPack + " 18";
-            name19lbl.Text = whatPack + " 19";
-            name20lbl.Text = whatPack + " 20";
+            namelbl10.Text = whatPack + " 10";
+            namelbl11.Text = whatPack + " 11";
+            namelbl12.Text = whatPack + " 12";
+            namelbl13.Text = whatPack + " 13";
+            namelbl14.Text = whatPack + " 14";
+            namelbl15.Text = whatPack + " 15";
+            namelbl16.Text = whatPack + " 16";
+            namelbl17.Text = whatPack + " 17";
+            namelbl18.Text = whatPack + " 18";
+            namelbl19.Text = whatPack + " 19";
+            namelbl20.Text = whatPack + " 20";
         }
 
 
 
         /// <summary>
-        /// //////////////////////////////////////////////////////////////////////////////
+        /// behaviour for picture boxes
         /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            itemnametxtbox.Text = name1lbl.Text;
+            itemnametxtbox.Text = namelbl1.Text;
             pricetextbox.Text = Convert.ToString(gl_price);
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            itemnametxtbox.Text = name2lbl.Text;
+            itemnametxtbox.Text = namelbl2.Text;
             pricetextbox.Text = Convert.ToString(gl_price);
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            itemnametxtbox.Text = name3lbl.Text;
+            itemnametxtbox.Text = namelbl3.Text;
             pricetextbox.Text = Convert.ToString(gl_price);
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            itemnametxtbox.Text = name4lbl.Text;
+            itemnametxtbox.Text = namelbl4.Text;
             pricetextbox.Text = Convert.ToString(gl_price);
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            itemnametxtbox.Text = name5lbl.Text;
+            itemnametxtbox.Text = namelbl5.Text;
             pricetextbox.Text = Convert.ToString(gl_price);
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            itemnametxtbox.Text = name6lbl.Text;
+            itemnametxtbox.Text = namelbl6.Text;
             pricetextbox.Text = Convert.ToString(gl_price);
         }
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            itemnametxtbox.Text = name7lbl.Text;
+            itemnametxtbox.Text = namelbl7.Text;
             pricetextbox.Text = Convert.ToString(gl_price);
         }
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            itemnametxtbox.Text = name8lbl.Text;
+            itemnametxtbox.Text = namelbl8.Text;
             pricetextbox.Text = Convert.ToString(gl_price);
         }
         private void pictureBox9_Click(object sender, EventArgs e)
@@ -417,61 +397,106 @@ namespace New_POS_Application
         }
         private void pictureBox10_Click(object sender, EventArgs e)
         {
-            itemnametxtbox.Text = name10lbl.Text;
+            itemnametxtbox.Text = namelbl10.Text;
             pricetextbox.Text = Convert.ToString(gl_price);
         }
         private void pictureBox11_Click(object sender, EventArgs e)
         {
-            itemnametxtbox.Text = name11lbl.Text;
+            itemnametxtbox.Text = namelbl11.Text;
             pricetextbox.Text = Convert.ToString(gl_price);
         }
         private void pictureBox12_Click(object sender, EventArgs e)
         {
-            itemnametxtbox.Text = name12lbl.Text;
+            itemnametxtbox.Text = namelbl12.Text;
             pricetextbox.Text = Convert.ToString(gl_price);
         }
         private void pictureBox13_Click(object sender, EventArgs e)
         {
-            itemnametxtbox.Text = name13lbl.Text;
+            itemnametxtbox.Text = namelbl13.Text;
             pricetextbox.Text = Convert.ToString(gl_price);
         }
         private void pictureBox14_Click(object sender, EventArgs e)
         {
-            itemnametxtbox.Text = name14lbl.Text;
+            itemnametxtbox.Text = namelbl14.Text;
             pricetextbox.Text = Convert.ToString(gl_price);
         }
         private void pictureBox15_Click(object sender, EventArgs e)
         {
-            itemnametxtbox.Text = name15lbl.Text;
+            itemnametxtbox.Text = namelbl15.Text;
             pricetextbox.Text = Convert.ToString(gl_price);
         }
         private void pictureBox16_Click(object sender, EventArgs e)
         {
-            itemnametxtbox.Text = name16lbl.Text;
+            itemnametxtbox.Text = namelbl16.Text;
             pricetextbox.Text = Convert.ToString(gl_price);
         }
         private void pictureBox17_Click(object sender, EventArgs e)
         {
-            itemnametxtbox.Text = name17lbl.Text;
+            itemnametxtbox.Text = namelbl17.Text;
             pricetextbox.Text = Convert.ToString(gl_price);
         }
         private void pictureBox18_Click(object sender, EventArgs e)
         {
-            itemnametxtbox.Text = name18lbl.Text;
+            itemnametxtbox.Text = namelbl18.Text;
             pricetextbox.Text = Convert.ToString(gl_price);
         }
         private void pictureBox19_Click(object sender, EventArgs e)
         {
-            itemnametxtbox.Text = name19lbl.Text;
+            itemnametxtbox.Text = namelbl19.Text;
             pricetextbox.Text = Convert.ToString(gl_price);
         }
         private void pictureBox20_Click(object sender, EventArgs e)
         {
-            itemnametxtbox.Text = name20lbl.Text;
+            itemnametxtbox.Text = namelbl20.Text;
             pricetextbox.Text = Convert.ToString(gl_price);
         }
 
-        private void pictureBox3_Click_1(object sender, EventArgs e)
+        /// <summary>
+        /// for processing the discount checkboxes
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void regularRbtn_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EmployeeRdbtn_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void noTaxRdbtn_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// for processing the calculations
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void calcbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void newbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cancelbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitbtn_Click(object sender, EventArgs e)
         {
 
         }
