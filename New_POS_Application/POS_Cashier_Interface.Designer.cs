@@ -140,8 +140,8 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 22);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(9, 18);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(0, 0);
             this.button1.TabIndex = 0;
@@ -1214,9 +1214,11 @@
             // 
             // POS_Cashier_Interface
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AllowDrop = true;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.breakfastBrn);
             this.Controls.Add(this.dinnerBtn);
             this.Controls.Add(this.groupBox1);
@@ -1232,7 +1234,7 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.lunchBtn);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "POS_Cashier_Interface";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
