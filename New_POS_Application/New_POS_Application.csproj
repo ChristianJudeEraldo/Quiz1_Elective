@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Activity4_PrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activity4_PrintForm.Designer.cs">
+      <DependentUpon>Activity4_PrintForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="POS_Cashier_Interface.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Activity4_PrintForm.resx">
+      <DependentUpon>Activity4_PrintForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="POS_Cashier_Interface.resx">
       <DependentUpon>POS_Cashier_Interface.cs</DependentUpon>
     </EmbeddedResource>

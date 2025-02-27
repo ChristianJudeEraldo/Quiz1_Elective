@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(POS_Cashier_Interface));
             this.button1 = new System.Windows.Forms.Button();
-            this.noTaxRdbtn = new System.Windows.Forms.RadioButton();
+            this.no_discount_button = new System.Windows.Forms.RadioButton();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.EmployeeRdbtn = new System.Windows.Forms.RadioButton();
-            this.regularRbtn = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.employee_discount_button = new System.Windows.Forms.RadioButton();
+            this.with_discountCard_button = new System.Windows.Forms.RadioButton();
+            this.senior_discount_button = new System.Windows.Forms.RadioButton();
             this.exitbtn = new System.Windows.Forms.Button();
             this.cancelbtn = new System.Windows.Forms.Button();
             this.newbtn = new System.Windows.Forms.Button();
@@ -58,7 +58,7 @@
             this.namelbl1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.changetxtbox = new System.Windows.Forms.TextBox();
-            this.cashre_renderedtxtbox = new System.Windows.Forms.TextBox();
+            this.cash_renderedtxtbox = new System.Windows.Forms.TextBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
@@ -119,9 +119,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.disconted_totaltxtbox = new System.Windows.Forms.TextBox();
-            this.discount_totaltxtbox = new System.Windows.Forms.TextBox();
-            this.qty_totaltxtbox = new System.Windows.Forms.TextBox();
+            this.total_discounted_txtbox = new System.Windows.Forms.TextBox();
+            this.total_discount_txtbox = new System.Windows.Forms.TextBox();
+            this.total_quantity_txtbox = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.coffeeBtn = new System.Windows.Forms.Button();
             this.beveragesBtn = new System.Windows.Forms.Button();
@@ -130,8 +130,20 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.lunchBtn = new System.Windows.Forms.Button();
-            this.breakfastBrn = new System.Windows.Forms.Button();
+            this.breakfastBtn = new System.Windows.Forms.Button();
             this.dinnerBtn = new System.Windows.Forms.Button();
+            this.button_bundle_a = new System.Windows.Forms.RadioButton();
+            this.button_bundle_b = new System.Windows.Forms.RadioButton();
+            this.displayListBox = new System.Windows.Forms.ListBox();
+            this.picturebox_orderimage = new System.Windows.Forms.PictureBox();
+            this.orderimagelbl = new System.Windows.Forms.Label();
+            this.checkbox_b1 = new System.Windows.Forms.CheckBox();
+            this.checkbox_b2 = new System.Windows.Forms.CheckBox();
+            this.bundle_group_b = new System.Windows.Forms.GroupBox();
+            this.bundle_group_a = new System.Windows.Forms.GroupBox();
+            this.checkbox_a1 = new System.Windows.Forms.CheckBox();
+            this.checkbox_a2 = new System.Windows.Forms.CheckBox();
+            this.food_group = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
@@ -156,6 +168,10 @@
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picturebox_orderimage)).BeginInit();
+            this.bundle_group_b.SuspendLayout();
+            this.bundle_group_a.SuspendLayout();
+            this.food_group.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -168,83 +184,85 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // noTaxRdbtn
+            // no_discount_button
             // 
-            this.noTaxRdbtn.AutoSize = true;
-            this.noTaxRdbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.noTaxRdbtn.Location = new System.Drawing.Point(380, 158);
-            this.noTaxRdbtn.Margin = new System.Windows.Forms.Padding(4);
-            this.noTaxRdbtn.Name = "noTaxRdbtn";
-            this.noTaxRdbtn.Size = new System.Drawing.Size(84, 17);
-            this.noTaxRdbtn.TabIndex = 17;
-            this.noTaxRdbtn.TabStop = true;
-            this.noTaxRdbtn.Text = "No Discount";
-            this.noTaxRdbtn.UseVisualStyleBackColor = true;
-            this.noTaxRdbtn.CheckedChanged += new System.EventHandler(this.noTaxRdbtn_CheckedChanged);
+            this.no_discount_button.AutoSize = true;
+            this.no_discount_button.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.no_discount_button.Location = new System.Drawing.Point(380, 158);
+            this.no_discount_button.Margin = new System.Windows.Forms.Padding(4);
+            this.no_discount_button.Name = "no_discount_button";
+            this.no_discount_button.Size = new System.Drawing.Size(84, 17);
+            this.no_discount_button.TabIndex = 17;
+            this.no_discount_button.TabStop = true;
+            this.no_discount_button.Text = "No Discount";
+            this.no_discount_button.UseVisualStyleBackColor = true;
+            this.no_discount_button.CheckedChanged += new System.EventHandler(this.noTaxRdbtn_CheckedChanged);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(305, 5);
+            this.label10.Location = new System.Drawing.Point(9, 55);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(131, 33);
+            this.label10.Size = new System.Drawing.Size(85, 22);
             this.label10.TabIndex = 15;
             this.label10.Text = "Change:";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(16, 5);
+            this.label9.Location = new System.Drawing.Point(7, 19);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(240, 33);
+            this.label9.Size = new System.Drawing.Size(139, 20);
             this.label9.TabIndex = 14;
             this.label9.Text = "Cash Rendered:";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // EmployeeRdbtn
+            // employee_discount_button
             // 
-            this.EmployeeRdbtn.AutoSize = true;
-            this.EmployeeRdbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.EmployeeRdbtn.Location = new System.Drawing.Point(380, 121);
-            this.EmployeeRdbtn.Margin = new System.Windows.Forms.Padding(4);
-            this.EmployeeRdbtn.Name = "EmployeeRdbtn";
-            this.EmployeeRdbtn.Size = new System.Drawing.Size(95, 17);
-            this.EmployeeRdbtn.TabIndex = 16;
-            this.EmployeeRdbtn.TabStop = true;
-            this.EmployeeRdbtn.Text = "Employee Disc";
-            this.EmployeeRdbtn.UseVisualStyleBackColor = true;
-            this.EmployeeRdbtn.CheckedChanged += new System.EventHandler(this.EmployeeRdbtn_CheckedChanged);
+            this.employee_discount_button.AutoSize = true;
+            this.employee_discount_button.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.employee_discount_button.Location = new System.Drawing.Point(380, 121);
+            this.employee_discount_button.Margin = new System.Windows.Forms.Padding(4);
+            this.employee_discount_button.Name = "employee_discount_button";
+            this.employee_discount_button.Size = new System.Drawing.Size(95, 17);
+            this.employee_discount_button.TabIndex = 16;
+            this.employee_discount_button.TabStop = true;
+            this.employee_discount_button.Text = "Employee Disc";
+            this.employee_discount_button.UseVisualStyleBackColor = true;
+            this.employee_discount_button.CheckedChanged += new System.EventHandler(this.EmployeeRdbtn_CheckedChanged);
             // 
-            // regularRbtn
+            // with_discountCard_button
             // 
-            this.regularRbtn.AutoSize = true;
-            this.regularRbtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.regularRbtn.Location = new System.Drawing.Point(379, 82);
-            this.regularRbtn.Margin = new System.Windows.Forms.Padding(4);
-            this.regularRbtn.Name = "regularRbtn";
-            this.regularRbtn.Size = new System.Drawing.Size(99, 17);
-            this.regularRbtn.TabIndex = 15;
-            this.regularRbtn.TabStop = true;
-            this.regularRbtn.Text = "With Disc. Card";
-            this.regularRbtn.UseVisualStyleBackColor = true;
-            this.regularRbtn.CheckedChanged += new System.EventHandler(this.regularRbtn_CheckedChanged);
+            this.with_discountCard_button.AutoSize = true;
+            this.with_discountCard_button.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.with_discountCard_button.Location = new System.Drawing.Point(379, 82);
+            this.with_discountCard_button.Margin = new System.Windows.Forms.Padding(4);
+            this.with_discountCard_button.Name = "with_discountCard_button";
+            this.with_discountCard_button.Size = new System.Drawing.Size(99, 17);
+            this.with_discountCard_button.TabIndex = 15;
+            this.with_discountCard_button.TabStop = true;
+            this.with_discountCard_button.Text = "With Disc. Card";
+            this.with_discountCard_button.UseVisualStyleBackColor = true;
+            this.with_discountCard_button.CheckedChanged += new System.EventHandler(this.regularRbtn_CheckedChanged);
             // 
-            // radioButton1
+            // senior_discount_button
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.radioButton1.Location = new System.Drawing.Point(380, 46);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(89, 17);
-            this.radioButton1.TabIndex = 14;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Senior Citizen";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.senior_discount_button.AutoSize = true;
+            this.senior_discount_button.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.senior_discount_button.Location = new System.Drawing.Point(380, 46);
+            this.senior_discount_button.Margin = new System.Windows.Forms.Padding(4);
+            this.senior_discount_button.Name = "senior_discount_button";
+            this.senior_discount_button.Size = new System.Drawing.Size(89, 17);
+            this.senior_discount_button.TabIndex = 14;
+            this.senior_discount_button.TabStop = true;
+            this.senior_discount_button.Text = "Senior Citizen";
+            this.senior_discount_button.UseVisualStyleBackColor = true;
+            this.senior_discount_button.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // exitbtn
             // 
@@ -307,7 +325,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(17, 128);
+            this.label5.Location = new System.Drawing.Point(16, 154);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(126, 16);
             this.label5.TabIndex = 9;
@@ -315,10 +333,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.noTaxRdbtn);
-            this.groupBox1.Controls.Add(this.EmployeeRdbtn);
-            this.groupBox1.Controls.Add(this.regularRbtn);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.no_discount_button);
+            this.groupBox1.Controls.Add(this.employee_discount_button);
+            this.groupBox1.Controls.Add(this.with_discountCard_button);
+            this.groupBox1.Controls.Add(this.senior_discount_button);
             this.groupBox1.Controls.Add(this.exitbtn);
             this.groupBox1.Controls.Add(this.cancelbtn);
             this.groupBox1.Controls.Add(this.newbtn);
@@ -347,7 +365,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(17, 102);
+            this.label4.Location = new System.Drawing.Point(17, 123);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(110, 16);
             this.label4.TabIndex = 8;
@@ -358,7 +376,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(17, 72);
+            this.label3.Location = new System.Drawing.Point(17, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 16);
             this.label3.TabIndex = 7;
@@ -369,7 +387,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(17, 41);
+            this.label2.Location = new System.Drawing.Point(16, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 16);
             this.label2.TabIndex = 6;
@@ -407,7 +425,7 @@
             // pricetextbox
             // 
             this.pricetextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pricetextbox.Location = new System.Drawing.Point(207, 80);
+            this.pricetextbox.Location = new System.Drawing.Point(207, 46);
             this.pricetextbox.Margin = new System.Windows.Forms.Padding(4);
             this.pricetextbox.Name = "pricetextbox";
             this.pricetextbox.Size = new System.Drawing.Size(124, 22);
@@ -417,11 +435,12 @@
             // quantitytxtbox
             // 
             this.quantitytxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quantitytxtbox.Location = new System.Drawing.Point(207, 43);
+            this.quantitytxtbox.Location = new System.Drawing.Point(207, 83);
             this.quantitytxtbox.Margin = new System.Windows.Forms.Padding(4);
             this.quantitytxtbox.Name = "quantitytxtbox";
             this.quantitytxtbox.Size = new System.Drawing.Size(124, 22);
             this.quantitytxtbox.TabIndex = 1;
+            this.quantitytxtbox.TextChanged += new System.EventHandler(this.quantitytxtbox_TextChanged);
             // 
             // itemnametxtbox
             // 
@@ -508,22 +527,23 @@
             // changetxtbox
             // 
             this.changetxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.changetxtbox.Location = new System.Drawing.Point(262, 50);
+            this.changetxtbox.Location = new System.Drawing.Point(154, 46);
             this.changetxtbox.Multiline = true;
             this.changetxtbox.Name = "changetxtbox";
-            this.changetxtbox.Size = new System.Drawing.Size(244, 84);
+            this.changetxtbox.Size = new System.Drawing.Size(408, 31);
             this.changetxtbox.TabIndex = 5;
             this.changetxtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // cashre_renderedtxtbox
+            // cash_renderedtxtbox
             // 
-            this.cashre_renderedtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cashre_renderedtxtbox.Location = new System.Drawing.Point(13, 50);
-            this.cashre_renderedtxtbox.Multiline = true;
-            this.cashre_renderedtxtbox.Name = "cashre_renderedtxtbox";
-            this.cashre_renderedtxtbox.Size = new System.Drawing.Size(243, 84);
-            this.cashre_renderedtxtbox.TabIndex = 4;
-            this.cashre_renderedtxtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.cash_renderedtxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cash_renderedtxtbox.Location = new System.Drawing.Point(154, 10);
+            this.cash_renderedtxtbox.Multiline = true;
+            this.cash_renderedtxtbox.Name = "cash_renderedtxtbox";
+            this.cash_renderedtxtbox.Size = new System.Drawing.Size(408, 29);
+            this.cash_renderedtxtbox.TabIndex = 4;
+            this.cash_renderedtxtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.cash_renderedtxtbox.TextChanged += new System.EventHandler(this.cash_renderedtxtbox_TextChanged);
             // 
             // pictureBox16
             // 
@@ -777,14 +797,14 @@
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.changetxtbox);
-            this.groupBox3.Controls.Add(this.cashre_renderedtxtbox);
+            this.groupBox3.Controls.Add(this.cash_renderedtxtbox);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox3.Location = new System.Drawing.Point(12, 387);
+            this.groupBox3.Location = new System.Drawing.Point(12, 448);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(647, 151);
+            this.groupBox3.Size = new System.Drawing.Size(647, 92);
             this.groupBox3.TabIndex = 113;
             this.groupBox3.TabStop = false;
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
@@ -1298,7 +1318,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(17, 74);
+            this.label6.Location = new System.Drawing.Point(17, 89);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(160, 16);
             this.label6.TabIndex = 15;
@@ -1326,48 +1346,50 @@
             this.label8.TabIndex = 13;
             this.label8.Text = "Total Quantity:";
             // 
-            // disconted_totaltxtbox
+            // total_discounted_txtbox
             // 
-            this.disconted_totaltxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.disconted_totaltxtbox.Location = new System.Drawing.Point(249, 89);
-            this.disconted_totaltxtbox.Margin = new System.Windows.Forms.Padding(4);
-            this.disconted_totaltxtbox.Name = "disconted_totaltxtbox";
-            this.disconted_totaltxtbox.Size = new System.Drawing.Size(319, 22);
-            this.disconted_totaltxtbox.TabIndex = 12;
+            this.total_discounted_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_discounted_txtbox.Location = new System.Drawing.Point(249, 89);
+            this.total_discounted_txtbox.Margin = new System.Windows.Forms.Padding(4);
+            this.total_discounted_txtbox.Name = "total_discounted_txtbox";
+            this.total_discounted_txtbox.Size = new System.Drawing.Size(319, 22);
+            this.total_discounted_txtbox.TabIndex = 12;
             // 
-            // discount_totaltxtbox
+            // total_discount_txtbox
             // 
-            this.discount_totaltxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.discount_totaltxtbox.Location = new System.Drawing.Point(207, 50);
-            this.discount_totaltxtbox.Margin = new System.Windows.Forms.Padding(4);
-            this.discount_totaltxtbox.Name = "discount_totaltxtbox";
-            this.discount_totaltxtbox.Size = new System.Drawing.Size(351, 22);
-            this.discount_totaltxtbox.TabIndex = 11;
+            this.total_discount_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_discount_txtbox.Location = new System.Drawing.Point(207, 50);
+            this.total_discount_txtbox.Margin = new System.Windows.Forms.Padding(4);
+            this.total_discount_txtbox.Name = "total_discount_txtbox";
+            this.total_discount_txtbox.Size = new System.Drawing.Size(351, 22);
+            this.total_discount_txtbox.TabIndex = 11;
+            this.total_discount_txtbox.TextChanged += new System.EventHandler(this.total_discount_txtbox_TextChanged);
             // 
-            // qty_totaltxtbox
+            // total_quantity_txtbox
             // 
-            this.qty_totaltxtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.qty_totaltxtbox.Location = new System.Drawing.Point(207, 14);
-            this.qty_totaltxtbox.Margin = new System.Windows.Forms.Padding(4);
-            this.qty_totaltxtbox.Name = "qty_totaltxtbox";
-            this.qty_totaltxtbox.Size = new System.Drawing.Size(351, 22);
-            this.qty_totaltxtbox.TabIndex = 10;
+            this.total_quantity_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.total_quantity_txtbox.Location = new System.Drawing.Point(207, 14);
+            this.total_quantity_txtbox.Margin = new System.Windows.Forms.Padding(4);
+            this.total_quantity_txtbox.Name = "total_quantity_txtbox";
+            this.total_quantity_txtbox.Size = new System.Drawing.Size(351, 22);
+            this.total_quantity_txtbox.TabIndex = 10;
+            this.total_quantity_txtbox.TextChanged += new System.EventHandler(this.total_quantity_txtbox_TextChanged);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.disconted_totaltxtbox);
-            this.groupBox2.Controls.Add(this.discount_totaltxtbox);
-            this.groupBox2.Controls.Add(this.qty_totaltxtbox);
+            this.groupBox2.Controls.Add(this.total_discounted_txtbox);
+            this.groupBox2.Controls.Add(this.total_discount_txtbox);
+            this.groupBox2.Controls.Add(this.total_quantity_txtbox);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox2.Location = new System.Drawing.Point(16, 338);
+            this.groupBox2.Location = new System.Drawing.Point(16, 337);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(692, 138);
+            this.groupBox2.Size = new System.Drawing.Size(740, 139);
             this.groupBox2.TabIndex = 111;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Summary";
@@ -1377,9 +1399,9 @@
             this.coffeeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.coffeeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.coffeeBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.coffeeBtn.Location = new System.Drawing.Point(447, 696);
+            this.coffeeBtn.Location = new System.Drawing.Point(444, 704);
             this.coffeeBtn.Name = "coffeeBtn";
-            this.coffeeBtn.Size = new System.Drawing.Size(183, 137);
+            this.coffeeBtn.Size = new System.Drawing.Size(183, 102);
             this.coffeeBtn.TabIndex = 129;
             this.coffeeBtn.Text = "COFFEE";
             this.coffeeBtn.UseVisualStyleBackColor = false;
@@ -1390,9 +1412,9 @@
             this.beveragesBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.beveragesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.beveragesBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.beveragesBtn.Location = new System.Drawing.Point(240, 696);
+            this.beveragesBtn.Location = new System.Drawing.Point(237, 704);
             this.beveragesBtn.Name = "beveragesBtn";
-            this.beveragesBtn.Size = new System.Drawing.Size(198, 137);
+            this.beveragesBtn.Size = new System.Drawing.Size(198, 102);
             this.beveragesBtn.TabIndex = 127;
             this.beveragesBtn.Text = "BEVERAGES";
             this.beveragesBtn.UseVisualStyleBackColor = false;
@@ -1403,9 +1425,9 @@
             this.dessertsBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.dessertsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dessertsBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dessertsBtn.Location = new System.Drawing.Point(447, 548);
+            this.dessertsBtn.Location = new System.Drawing.Point(444, 591);
             this.dessertsBtn.Name = "dessertsBtn";
-            this.dessertsBtn.Size = new System.Drawing.Size(183, 142);
+            this.dessertsBtn.Size = new System.Drawing.Size(183, 107);
             this.dessertsBtn.TabIndex = 122;
             this.dessertsBtn.Text = "DESSERTS";
             this.dessertsBtn.UseVisualStyleBackColor = false;
@@ -1449,46 +1471,172 @@
             this.lunchBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lunchBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lunchBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lunchBtn.Location = new System.Drawing.Point(240, 548);
+            this.lunchBtn.Location = new System.Drawing.Point(240, 588);
             this.lunchBtn.Name = "lunchBtn";
-            this.lunchBtn.Size = new System.Drawing.Size(198, 142);
+            this.lunchBtn.Size = new System.Drawing.Size(198, 107);
             this.lunchBtn.TabIndex = 120;
             this.lunchBtn.Text = "LUNCH";
             this.lunchBtn.UseVisualStyleBackColor = false;
             this.lunchBtn.Click += new System.EventHandler(this.lunchBtn_Click);
             // 
-            // breakfastBrn
+            // breakfastBtn
             // 
-            this.breakfastBrn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.breakfastBrn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.breakfastBrn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.breakfastBrn.Location = new System.Drawing.Point(25, 696);
-            this.breakfastBrn.Name = "breakfastBrn";
-            this.breakfastBrn.Size = new System.Drawing.Size(209, 137);
-            this.breakfastBrn.TabIndex = 135;
-            this.breakfastBrn.Text = "BREAKFAST";
-            this.breakfastBrn.UseVisualStyleBackColor = false;
-            this.breakfastBrn.Click += new System.EventHandler(this.breakfastBrn_Click);
+            this.breakfastBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.breakfastBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.breakfastBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.breakfastBtn.Location = new System.Drawing.Point(22, 704);
+            this.breakfastBtn.Name = "breakfastBtn";
+            this.breakfastBtn.Size = new System.Drawing.Size(209, 102);
+            this.breakfastBtn.TabIndex = 135;
+            this.breakfastBtn.Text = "BREAKFAST";
+            this.breakfastBtn.UseVisualStyleBackColor = false;
+            this.breakfastBtn.Click += new System.EventHandler(this.breakfastBrn_Click);
             // 
             // dinnerBtn
             // 
             this.dinnerBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.dinnerBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dinnerBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dinnerBtn.Location = new System.Drawing.Point(25, 548);
+            this.dinnerBtn.Location = new System.Drawing.Point(25, 591);
             this.dinnerBtn.Name = "dinnerBtn";
-            this.dinnerBtn.Size = new System.Drawing.Size(209, 139);
+            this.dinnerBtn.Size = new System.Drawing.Size(209, 104);
             this.dinnerBtn.TabIndex = 134;
             this.dinnerBtn.Text = "DINNER";
             this.dinnerBtn.UseVisualStyleBackColor = false;
             this.dinnerBtn.Click += new System.EventHandler(this.dinnerBtn_Click);
             // 
+            // button_bundle_a
+            // 
+            this.button_bundle_a.AutoSize = true;
+            this.button_bundle_a.Location = new System.Drawing.Point(13, 27);
+            this.button_bundle_a.Name = "button_bundle_a";
+            this.button_bundle_a.Size = new System.Drawing.Size(68, 17);
+            this.button_bundle_a.TabIndex = 140;
+            this.button_bundle_a.TabStop = true;
+            this.button_bundle_a.Text = "Bundle A";
+            this.button_bundle_a.UseVisualStyleBackColor = true;
+            // 
+            // button_bundle_b
+            // 
+            this.button_bundle_b.AutoSize = true;
+            this.button_bundle_b.Location = new System.Drawing.Point(13, 50);
+            this.button_bundle_b.Name = "button_bundle_b";
+            this.button_bundle_b.Size = new System.Drawing.Size(68, 17);
+            this.button_bundle_b.TabIndex = 141;
+            this.button_bundle_b.TabStop = true;
+            this.button_bundle_b.Text = "Bundle B";
+            this.button_bundle_b.UseVisualStyleBackColor = true;
+            // 
+            // displayListBox
+            // 
+            this.displayListBox.Location = new System.Drawing.Point(223, 823);
+            this.displayListBox.Name = "displayListBox";
+            this.displayListBox.Size = new System.Drawing.Size(225, 160);
+            this.displayListBox.TabIndex = 0;
+            // 
+            // picturebox_orderimage
+            // 
+            this.picturebox_orderimage.Location = new System.Drawing.Point(454, 823);
+            this.picturebox_orderimage.Name = "picturebox_orderimage";
+            this.picturebox_orderimage.Size = new System.Drawing.Size(173, 137);
+            this.picturebox_orderimage.TabIndex = 142;
+            this.picturebox_orderimage.TabStop = false;
+            // 
+            // orderimagelbl
+            // 
+            this.orderimagelbl.AutoSize = true;
+            this.orderimagelbl.Location = new System.Drawing.Point(506, 963);
+            this.orderimagelbl.Name = "orderimagelbl";
+            this.orderimagelbl.Size = new System.Drawing.Size(68, 13);
+            this.orderimagelbl.TabIndex = 143;
+            this.orderimagelbl.Text = "Order Image:";
+            // 
+            // checkbox_b1
+            // 
+            this.checkbox_b1.AutoSize = true;
+            this.checkbox_b1.Location = new System.Drawing.Point(12, 19);
+            this.checkbox_b1.Name = "checkbox_b1";
+            this.checkbox_b1.Size = new System.Drawing.Size(85, 17);
+            this.checkbox_b1.TabIndex = 144;
+            this.checkbox_b1.Text = "Sweet ching";
+            this.checkbox_b1.UseVisualStyleBackColor = true;
+            // 
+            // checkbox_b2
+            // 
+            this.checkbox_b2.AutoSize = true;
+            this.checkbox_b2.Location = new System.Drawing.Point(12, 42);
+            this.checkbox_b2.Name = "checkbox_b2";
+            this.checkbox_b2.Size = new System.Drawing.Size(87, 17);
+            this.checkbox_b2.TabIndex = 145;
+            this.checkbox_b2.Text = "Spicy noodle";
+            this.checkbox_b2.UseVisualStyleBackColor = true;
+            // 
+            // bundle_group_b
+            // 
+            this.bundle_group_b.Controls.Add(this.checkbox_b1);
+            this.bundle_group_b.Controls.Add(this.checkbox_b2);
+            this.bundle_group_b.Location = new System.Drawing.Point(107, 906);
+            this.bundle_group_b.Name = "bundle_group_b";
+            this.bundle_group_b.Size = new System.Drawing.Size(98, 77);
+            this.bundle_group_b.TabIndex = 146;
+            this.bundle_group_b.TabStop = false;
+            this.bundle_group_b.Text = "Bundle B";
+            // 
+            // bundle_group_a
+            // 
+            this.bundle_group_a.Controls.Add(this.checkbox_a1);
+            this.bundle_group_a.Controls.Add(this.checkbox_a2);
+            this.bundle_group_a.Location = new System.Drawing.Point(107, 823);
+            this.bundle_group_a.Name = "bundle_group_a";
+            this.bundle_group_a.Size = new System.Drawing.Size(98, 77);
+            this.bundle_group_a.TabIndex = 147;
+            this.bundle_group_a.TabStop = false;
+            this.bundle_group_a.Text = "Bundle A";
+            // 
+            // checkbox_a1
+            // 
+            this.checkbox_a1.AutoSize = true;
+            this.checkbox_a1.Location = new System.Drawing.Point(12, 19);
+            this.checkbox_a1.Name = "checkbox_a1";
+            this.checkbox_a1.Size = new System.Drawing.Size(58, 17);
+            this.checkbox_a1.TabIndex = 144;
+            this.checkbox_a1.Text = "10 pcs";
+            this.checkbox_a1.UseVisualStyleBackColor = true;
+            // 
+            // checkbox_a2
+            // 
+            this.checkbox_a2.AutoSize = true;
+            this.checkbox_a2.Location = new System.Drawing.Point(12, 42);
+            this.checkbox_a2.Name = "checkbox_a2";
+            this.checkbox_a2.Size = new System.Drawing.Size(52, 17);
+            this.checkbox_a2.TabIndex = 145;
+            this.checkbox_a2.Text = "2 pcs";
+            this.checkbox_a2.UseVisualStyleBackColor = true;
+            // 
+            // food_group
+            // 
+            this.food_group.Controls.Add(this.button_bundle_b);
+            this.food_group.Controls.Add(this.button_bundle_a);
+            this.food_group.Location = new System.Drawing.Point(9, 823);
+            this.food_group.Name = "food_group";
+            this.food_group.Size = new System.Drawing.Size(92, 82);
+            this.food_group.TabIndex = 148;
+            this.food_group.TabStop = false;
+            this.food_group.Text = "Food group";
+            // 
             // POS_Cashier_Interface
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1540, 845);
-            this.Controls.Add(this.breakfastBrn);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.food_group);
+            this.Controls.Add(this.bundle_group_a);
+            this.Controls.Add(this.orderimagelbl);
+            this.Controls.Add(this.picturebox_orderimage);
+            this.Controls.Add(this.displayListBox);
+            this.Controls.Add(this.breakfastBtn);
             this.Controls.Add(this.dinnerBtn);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox3);
@@ -1503,6 +1651,7 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.lunchBtn);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.bundle_group_b);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "POS_Cashier_Interface";
             this.Text = "Payroll 21";
@@ -1535,6 +1684,13 @@
             this.groupBox4.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picturebox_orderimage)).EndInit();
+            this.bundle_group_b.ResumeLayout(false);
+            this.bundle_group_b.PerformLayout();
+            this.bundle_group_a.ResumeLayout(false);
+            this.bundle_group_a.PerformLayout();
+            this.food_group.ResumeLayout(false);
+            this.food_group.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1543,7 +1699,7 @@
         #endregion
 
         private System.Windows.Forms.Button beveragesBtn;
-        private System.Windows.Forms.Button breakfastBrn;
+        private System.Windows.Forms.Button breakfastBtn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button calcbtn;
         private System.Windows.Forms.Button cancelbtn;
@@ -1611,19 +1767,19 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.RadioButton EmployeeRdbtn;
-        private System.Windows.Forms.RadioButton noTaxRdbtn;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton regularRbtn;
-        private System.Windows.Forms.TextBox cashre_renderedtxtbox;
+        private System.Windows.Forms.RadioButton employee_discount_button;
+        private System.Windows.Forms.RadioButton no_discount_button;
+        private System.Windows.Forms.RadioButton senior_discount_button;
+        private System.Windows.Forms.RadioButton with_discountCard_button;
+        private System.Windows.Forms.TextBox cash_renderedtxtbox;
         private System.Windows.Forms.TextBox changetxtbox;
-        private System.Windows.Forms.TextBox disconted_totaltxtbox;
-        private System.Windows.Forms.TextBox discount_totaltxtbox;
+        private System.Windows.Forms.TextBox total_discounted_txtbox;
+        private System.Windows.Forms.TextBox total_discount_txtbox;
         private System.Windows.Forms.TextBox discountedtxtbox;
         private System.Windows.Forms.TextBox discounttxtbox;
         private System.Windows.Forms.TextBox itemnametxtbox;
         private System.Windows.Forms.TextBox pricetextbox;
-        private System.Windows.Forms.TextBox qty_totaltxtbox;
+        private System.Windows.Forms.TextBox total_quantity_txtbox;
         private System.Windows.Forms.TextBox quantitytxtbox;
         private System.Windows.Forms.Label pricelbl5;
         private System.Windows.Forms.Label pricelbl4;
@@ -1645,6 +1801,18 @@
         private System.Windows.Forms.Label pricelbl8;
         private System.Windows.Forms.Label pricelbl7;
         private System.Windows.Forms.Label pricelbl6;
+        private System.Windows.Forms.RadioButton button_bundle_a;
+        private System.Windows.Forms.RadioButton button_bundle_b;
+        private System.Windows.Forms.ListBox displayListBox;
+        private System.Windows.Forms.PictureBox picturebox_orderimage;
+        private System.Windows.Forms.Label orderimagelbl;
+        private System.Windows.Forms.CheckBox checkbox_b1;
+        private System.Windows.Forms.CheckBox checkbox_b2;
+        private System.Windows.Forms.GroupBox bundle_group_b;
+        private System.Windows.Forms.GroupBox bundle_group_a;
+        private System.Windows.Forms.CheckBox checkbox_a1;
+        private System.Windows.Forms.CheckBox checkbox_a2;
+        private System.Windows.Forms.GroupBox food_group;
     }
 }
 

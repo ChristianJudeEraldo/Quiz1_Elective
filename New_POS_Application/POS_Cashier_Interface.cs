@@ -1,9 +1,11 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -36,8 +38,16 @@ namespace New_POS_Application
         double price19 = 0.0;
         double price20 = 0.0;
 
+        // summarize total group
+        int summary_total_qty = 0;
+        double summary_total_discount = 0, summary_total_discounted = 0;
 
-        String baseString = "G:\\school\\3rdyr\\2ndsem\\ecp\\prelim\\quiqui\\forks\\Quiz1_Elective\\images"; // change accordingly
+        // for lesson 3 onwards
+        private double total_amount = 0;
+        private int total_qty = 0;
+
+
+        String baseString = "C:\\Users\\USER\\OneDrive\\Desktop\\New_POS_Application\\images"; // change accordingly
 
 
 
@@ -49,8 +59,50 @@ namespace New_POS_Application
         private void Form1_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            this.BackColor = Color.Blue;
+            this.BackColor = Color.YellowGreen;
             this.Text = "Point of Sale Interface";
+
+            // disable all 
+            itemnametxtbox.Enabled = false;
+            pricetextbox.Enabled = false;
+            discountedtxtbox.Enabled = false;
+            quantitytxtbox.Enabled = false;
+            discounttxtbox.Enabled = false;
+            discountedtxtbox.Enabled = false;
+
+            // summary box group
+            total_quantity_txtbox.Enabled = false;
+            total_discount_txtbox.Enabled = false;
+            total_discounted_txtbox.Enabled = false;
+
+            // cash renedered x change
+            changetxtbox.Enabled = false;
+            cash_renderedtxtbox.Enabled = false;
+
+            // discounts
+            senior_discount_button.Enabled = false;
+            with_discountCard_button.Enabled = false;
+            employee_discount_button.Enabled = false;
+            no_discount_button.Enabled = false;
+
+
+            // buttons disabled except exit button 
+            calcbtn.Enabled = false;
+            newbtn.Enabled = false;
+            cancelbtn.Enabled = false;
+            exitbtn.Enabled = true;
+
+            // disable food group and bundles
+            button_bundle_a.Enabled = false;
+            button_bundle_b.Enabled = false;
+            checkbox_a1.Enabled = false;
+            checkbox_a2.Enabled = false;
+            checkbox_b1.Enabled = false;
+            checkbox_b2.Enabled = false;
+            displayListBox.Enabled = false;
+            picturebox_orderimage.Enabled = false;
+
+
         }
 
         private void groupBox3_Enter(object sender, EventArgs e)
@@ -131,7 +183,26 @@ namespace New_POS_Application
             namelbl19.Text = whatPack + " 19";
             namelbl20.Text = whatPack + " 20";
 
-
+            pricelbl1.Text = Convert.ToString(price1);
+            pricelbl2.Text = Convert.ToString(price2);
+            pricelbl3.Text = Convert.ToString(price3);
+            pricelbl4.Text = Convert.ToString(price4);
+            pricelbl5.Text = Convert.ToString(price5);
+            pricelbl6.Text = Convert.ToString(price6);
+            pricelbl7.Text = Convert.ToString(price7);
+            pricelbl8.Text = Convert.ToString(price8);
+            pricelbl9.Text = Convert.ToString(price9);
+            pricelbl10.Text = Convert.ToString(price10);
+            pricelbl11.Text = Convert.ToString(price11);
+            pricelbl12.Text = Convert.ToString(price12);
+            pricelbl13.Text = Convert.ToString(price13);
+            pricelbl14.Text = Convert.ToString(price14);
+            pricelbl15.Text = Convert.ToString(price15);
+            pricelbl16.Text = Convert.ToString(price16);
+            pricelbl17.Text = Convert.ToString(price17);
+            pricelbl18.Text = Convert.ToString(price18);
+            pricelbl19.Text = Convert.ToString(price19);
+            pricelbl20.Text = Convert.ToString(price20);
 
         }
         private void lunchBtn_Click(object sender, EventArgs e)
@@ -201,6 +272,27 @@ namespace New_POS_Application
             namelbl18.Text = whatPack + " 18";
             namelbl19.Text = whatPack + " 19";
             namelbl20.Text = whatPack + " 20";
+
+            pricelbl1.Text = Convert.ToString(price1);
+            pricelbl2.Text = Convert.ToString(price2);
+            pricelbl3.Text = Convert.ToString(price3);
+            pricelbl4.Text = Convert.ToString(price4);
+            pricelbl5.Text = Convert.ToString(price5);
+            pricelbl6.Text = Convert.ToString(price6);
+            pricelbl7.Text = Convert.ToString(price7);
+            pricelbl8.Text = Convert.ToString(price8);
+            pricelbl9.Text = Convert.ToString(price9);
+            pricelbl10.Text = Convert.ToString(price10);
+            pricelbl11.Text = Convert.ToString(price11);
+            pricelbl12.Text = Convert.ToString(price12);
+            pricelbl13.Text = Convert.ToString(price13);
+            pricelbl14.Text = Convert.ToString(price14);
+            pricelbl15.Text = Convert.ToString(price15);
+            pricelbl16.Text = Convert.ToString(price16);
+            pricelbl17.Text = Convert.ToString(price17);
+            pricelbl18.Text = Convert.ToString(price18);
+            pricelbl19.Text = Convert.ToString(price19);
+            pricelbl20.Text = Convert.ToString(price20);
         }
 
         private void dessertsBtn_Click(object sender, EventArgs e)
@@ -269,6 +361,27 @@ namespace New_POS_Application
             namelbl18.Text = whatPack + " 18";
             namelbl19.Text = whatPack + " 19";
             namelbl20.Text = whatPack + " 20";
+
+            pricelbl1.Text = Convert.ToString(price1);
+            pricelbl2.Text = Convert.ToString(price2);
+            pricelbl3.Text = Convert.ToString(price3);
+            pricelbl4.Text = Convert.ToString(price4);
+            pricelbl5.Text = Convert.ToString(price5);
+            pricelbl6.Text = Convert.ToString(price6);
+            pricelbl7.Text = Convert.ToString(price7);
+            pricelbl8.Text = Convert.ToString(price8);
+            pricelbl9.Text = Convert.ToString(price9);
+            pricelbl10.Text = Convert.ToString(price10);
+            pricelbl11.Text = Convert.ToString(price11);
+            pricelbl12.Text = Convert.ToString(price12);
+            pricelbl13.Text = Convert.ToString(price13);
+            pricelbl14.Text = Convert.ToString(price14);
+            pricelbl15.Text = Convert.ToString(price15);
+            pricelbl16.Text = Convert.ToString(price16);
+            pricelbl17.Text = Convert.ToString(price17);
+            pricelbl18.Text = Convert.ToString(price18);
+            pricelbl19.Text = Convert.ToString(price19);
+            pricelbl20.Text = Convert.ToString(price20);
         }
 
         private void breakfastBrn_Click(object sender, EventArgs e)
@@ -337,6 +450,27 @@ namespace New_POS_Application
             namelbl18.Text = whatPack + " 18";
             namelbl19.Text = whatPack + " 19";
             namelbl20.Text = whatPack + " 20";
+
+            pricelbl1.Text = Convert.ToString(price1);
+            pricelbl2.Text = Convert.ToString(price2);
+            pricelbl3.Text = Convert.ToString(price3);
+            pricelbl4.Text = Convert.ToString(price4);
+            pricelbl5.Text = Convert.ToString(price5);
+            pricelbl6.Text = Convert.ToString(price6);
+            pricelbl7.Text = Convert.ToString(price7);
+            pricelbl8.Text = Convert.ToString(price8);
+            pricelbl9.Text = Convert.ToString(price9);
+            pricelbl10.Text = Convert.ToString(price10);
+            pricelbl11.Text = Convert.ToString(price11);
+            pricelbl12.Text = Convert.ToString(price12);
+            pricelbl13.Text = Convert.ToString(price13);
+            pricelbl14.Text = Convert.ToString(price14);
+            pricelbl15.Text = Convert.ToString(price15);
+            pricelbl16.Text = Convert.ToString(price16);
+            pricelbl17.Text = Convert.ToString(price17);
+            pricelbl18.Text = Convert.ToString(price18);
+            pricelbl19.Text = Convert.ToString(price19);
+            pricelbl20.Text = Convert.ToString(price20);
         }
 
         private void beveragesBtn_Click(object sender, EventArgs e)
@@ -408,6 +542,27 @@ namespace New_POS_Application
             namelbl19.Text = whatPack + " 19";
             namelbl20.Text = whatPack + " 20";
 
+            pricelbl1.Text = Convert.ToString(price1);
+            pricelbl2.Text = Convert.ToString(price2);
+            pricelbl3.Text = Convert.ToString(price3);
+            pricelbl4.Text = Convert.ToString(price4);
+            pricelbl5.Text = Convert.ToString(price5);
+            pricelbl6.Text = Convert.ToString(price6);
+            pricelbl7.Text = Convert.ToString(price7);
+            pricelbl8.Text = Convert.ToString(price8);
+            pricelbl9.Text = Convert.ToString(price9);
+            pricelbl10.Text = Convert.ToString(price10);
+            pricelbl11.Text = Convert.ToString(price11);
+            pricelbl12.Text = Convert.ToString(price12);
+            pricelbl13.Text = Convert.ToString(price13);
+            pricelbl14.Text = Convert.ToString(price14);
+            pricelbl15.Text = Convert.ToString(price15);
+            pricelbl16.Text = Convert.ToString(price16);
+            pricelbl17.Text = Convert.ToString(price17);
+            pricelbl18.Text = Convert.ToString(price18);
+            pricelbl19.Text = Convert.ToString(price19);
+            pricelbl20.Text = Convert.ToString(price20);
+
         }
 
         private void coffeeBtn_Click(object sender, EventArgs e)
@@ -478,6 +633,27 @@ namespace New_POS_Application
             namelbl18.Text = whatPack + " 18";
             namelbl19.Text = whatPack + " 19";
             namelbl20.Text = whatPack + " 20";
+
+            pricelbl1.Text = Convert.ToString(price1);
+            pricelbl2.Text = Convert.ToString(price2);
+            pricelbl3.Text = Convert.ToString(price3);
+            pricelbl4.Text = Convert.ToString(price4);
+            pricelbl5.Text = Convert.ToString(price5);
+            pricelbl6.Text = Convert.ToString(price6);
+            pricelbl7.Text = Convert.ToString(price7);
+            pricelbl8.Text = Convert.ToString(price8);
+            pricelbl9.Text = Convert.ToString(price9);
+            pricelbl10.Text = Convert.ToString(price10);
+            pricelbl11.Text = Convert.ToString(price11);
+            pricelbl12.Text = Convert.ToString(price12);
+            pricelbl13.Text = Convert.ToString(price13);
+            pricelbl14.Text = Convert.ToString(price14);
+            pricelbl15.Text = Convert.ToString(price15);
+            pricelbl16.Text = Convert.ToString(price16);
+            pricelbl17.Text = Convert.ToString(price17);
+            pricelbl18.Text = Convert.ToString(price18);
+            pricelbl19.Text = Convert.ToString(price19);
+            pricelbl20.Text = Convert.ToString(price20);
         }
 
 
@@ -489,107 +665,368 @@ namespace New_POS_Application
         {
             itemnametxtbox.Text = namelbl1.Text;
             pricetextbox.Text = Convert.ToString(price1);
+
+            // disable 
+            // buttons
+            calcbtn.Enabled = false;
+
+            // discounts
+            senior_discount_button.Enabled = false;
+            with_discountCard_button.Enabled = false;
+            employee_discount_button.Enabled = false;
+            no_discount_button.Enabled = false;
+            
+            // set other states
+            quantitytxtbox.Enabled = true;
+
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl2.Text;
             pricetextbox.Text = Convert.ToString(price2);
+
+            // disable 
+            // buttons
+            calcbtn.Enabled = false;
+
+            // discounts
+            senior_discount_button.Enabled = false;
+            with_discountCard_button.Enabled = false;
+            employee_discount_button.Enabled = false;
+            no_discount_button.Enabled = false;
+
+            // set other states
+            quantitytxtbox.Enabled = true;
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl3.Text;
             pricetextbox.Text = Convert.ToString(price3);
+
+            // disable 
+            // buttons
+            calcbtn.Enabled = false;
+
+            // discounts
+            senior_discount_button.Enabled = false;
+            with_discountCard_button.Enabled = false;
+            employee_discount_button.Enabled = false;
+            no_discount_button.Enabled = false;
+
+            // set other states
+            quantitytxtbox.Enabled = true;
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl4.Text;
             pricetextbox.Text = Convert.ToString(price4);
+
+            // disable 
+            // buttons
+            calcbtn.Enabled = false;
+
+            // discounts
+            senior_discount_button.Enabled = false;
+            with_discountCard_button.Enabled = false;
+            employee_discount_button.Enabled = false;
+            no_discount_button.Enabled = false;
+
+            // set other states
+            quantitytxtbox.Enabled = true;
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl5.Text;
             pricetextbox.Text = Convert.ToString(price5);
+
+            // disable 
+            // buttons
+            calcbtn.Enabled = false;
+
+            // discounts
+            senior_discount_button.Enabled = false;
+            with_discountCard_button.Enabled = false;
+            employee_discount_button.Enabled = false;
+            no_discount_button.Enabled = false;
+
+            // set other states
+            quantitytxtbox.Enabled = true;
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl6.Text;
             pricetextbox.Text = Convert.ToString(price6);
+
+            // disable 
+            // buttons
+            calcbtn.Enabled = false;
+
+            // discounts
+            senior_discount_button.Enabled = false;
+            with_discountCard_button.Enabled = false;
+            employee_discount_button.Enabled = false;
+            no_discount_button.Enabled = false;
+
+            // set other states
+            quantitytxtbox.Enabled = true;
         }
         private void pictureBox7_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl7.Text;
             pricetextbox.Text = Convert.ToString(price7);
+
+            // disable 
+            // buttons
+            calcbtn.Enabled = false;
+
+            // discounts
+            senior_discount_button.Enabled = false;
+            with_discountCard_button.Enabled = false;
+            employee_discount_button.Enabled = false;
+            no_discount_button.Enabled = false;
+
+            // set other states
+            quantitytxtbox.Enabled = true;
         }
         private void pictureBox8_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl8.Text;
             pricetextbox.Text = Convert.ToString(price8);
+
+            // disable 
+            // buttons
+            calcbtn.Enabled = false;
+
+            // discounts
+            senior_discount_button.Enabled = false;
+            with_discountCard_button.Enabled = false;
+            employee_discount_button.Enabled = false;
+            no_discount_button.Enabled = false;
+
+            // set other states
+            quantitytxtbox.Enabled = true;
         }
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl9.Text;
             pricetextbox.Text = Convert.ToString(price9);
+
+            // disable 
+            // buttons
+            calcbtn.Enabled = false;
+
+            // discounts
+            senior_discount_button.Enabled = false;
+            with_discountCard_button.Enabled = false;
+            employee_discount_button.Enabled = false;
+            no_discount_button.Enabled = false;
+
+            // set other states
+            quantitytxtbox.Enabled = true;
         }
         private void pictureBox10_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl10.Text;
             pricetextbox.Text = Convert.ToString(price10);
+
+            // disable 
+            // buttons
+            calcbtn.Enabled = false;
+
+            // discounts
+            senior_discount_button.Enabled = false;
+            with_discountCard_button.Enabled = false;
+            employee_discount_button.Enabled = false;
+            no_discount_button.Enabled = false;
+
+            // set other states
+            quantitytxtbox.Enabled = true;
         }
         private void pictureBox11_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl11.Text;
             pricetextbox.Text = Convert.ToString(price11);
+
+            // disable 
+            // buttons
+            calcbtn.Enabled = false;
+
+            // discounts
+            senior_discount_button.Enabled = false;
+            with_discountCard_button.Enabled = false;
+            employee_discount_button.Enabled = false;
+            no_discount_button.Enabled = false;
+
+            // set other states
+            quantitytxtbox.Enabled = true;
         }
         private void pictureBox12_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl12.Text;
             pricetextbox.Text = Convert.ToString(price12);
+
+            // disable 
+            // buttons
+            calcbtn.Enabled = false;
+
+            // discounts
+            senior_discount_button.Enabled = false;
+            with_discountCard_button.Enabled = false;
+            employee_discount_button.Enabled = false;
+            no_discount_button.Enabled = false;
+
+            // set other states
+            quantitytxtbox.Enabled = true;
         }
         private void pictureBox13_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl13.Text;
             pricetextbox.Text = Convert.ToString(price13);
+
+            // disable 
+            // buttons
+            calcbtn.Enabled = false;
+
+            // discounts
+            senior_discount_button.Enabled = false;
+            with_discountCard_button.Enabled = false;
+            employee_discount_button.Enabled = false;
+            no_discount_button.Enabled = false;
+
+            // set other states
+            quantitytxtbox.Enabled = true;
         }
         private void pictureBox14_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl14.Text;
             pricetextbox.Text = Convert.ToString(price14);
+
+            // disable 
+            // buttons
+            calcbtn.Enabled = false;
+
+            // discounts
+            senior_discount_button.Enabled = false;
+            with_discountCard_button.Enabled = false;
+            employee_discount_button.Enabled = false;
+            no_discount_button.Enabled = false;
+
+            // set other states
+            quantitytxtbox.Enabled = true;
         }
         private void pictureBox15_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl15.Text;
             pricetextbox.Text = Convert.ToString(price15);
+
+            // disable 
+            // buttons
+            calcbtn.Enabled = false;
+
+            // discounts
+            senior_discount_button.Enabled = false;
+            with_discountCard_button.Enabled = false;
+            employee_discount_button.Enabled = false;
+            no_discount_button.Enabled = false;
+
+            // set other states
+            quantitytxtbox.Enabled = true;
         }
         private void pictureBox16_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl16.Text;
             pricetextbox.Text = Convert.ToString(price16);
+
+            // disable 
+            // buttons
+            calcbtn.Enabled = false;
+
+            // discounts
+            senior_discount_button.Enabled = false;
+            with_discountCard_button.Enabled = false;
+            employee_discount_button.Enabled = false;
+            no_discount_button.Enabled = false;
+
+            // set other states
+            quantitytxtbox.Enabled = true;
         }
         private void pictureBox17_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl17.Text;
             pricetextbox.Text = Convert.ToString(price17);
+
+            // disable 
+            // buttons
+            calcbtn.Enabled = false;
+
+            // discounts
+            senior_discount_button.Enabled = false;
+            with_discountCard_button.Enabled = false;
+            employee_discount_button.Enabled = false;
+            no_discount_button.Enabled = false;
+
+            // set other states
+            quantitytxtbox.Enabled = true;
         }
         private void pictureBox18_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl18.Text;
             pricetextbox.Text = Convert.ToString(price18);
+
+            // disable 
+            // buttons
+            calcbtn.Enabled = false;
+
+            // discounts
+            senior_discount_button.Enabled = false;
+            with_discountCard_button.Enabled = false;
+            employee_discount_button.Enabled = false;
+            no_discount_button.Enabled = false;
+
+            // set other states
+            quantitytxtbox.Enabled = true;
         }
         private void pictureBox19_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl19.Text;
             pricetextbox.Text = Convert.ToString(price19);
+
+            // disable 
+            // buttons
+            calcbtn.Enabled = false;
+
+            // discounts
+            senior_discount_button.Enabled = false;
+            with_discountCard_button.Enabled = false;
+            employee_discount_button.Enabled = false;
+            no_discount_button.Enabled = false;
+
+            // set other states
+            quantitytxtbox.Enabled = true;
         }
         private void pictureBox20_Click(object sender, EventArgs e)
         {
             itemnametxtbox.Text = namelbl20.Text;
             pricetextbox.Text = Convert.ToString(price20);
-		}
+
+            // disable 
+            // buttons
+            calcbtn.Enabled = false;
+
+            // discounts
+            senior_discount_button.Enabled = false;
+            with_discountCard_button.Enabled = false;
+            employee_discount_button.Enabled = false;
+            no_discount_button.Enabled = false;
+
+            // set other states
+            quantitytxtbox.Enabled = true;
+        }
 
         /// <summary>
         /// for processing the discount checkboxes
@@ -598,21 +1035,102 @@ namespace New_POS_Application
         /// <param name="e"></param>
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
+            //Declaration of variables within a method of an object
+            int qty;
+            double price, discount_amt, discounted_amt;
+            //convert string data from textboxes to numeric and place it as value of the variable
+             qty = Convert.ToInt32(quantitytxtbox.Text);
+            price = Convert.ToDouble(pricetextbox.Text);
+            //create a formula needed for computation
+            discount_amt = (qty * price) * 0.30;
+            discounted_amt = (qty * price) - discount_amt;
+            //converting numeric data to string and display it inside the textboxes
+            discounttxtbox.Text = discount_amt.ToString("n");
+            discountedtxtbox.Text = discounted_amt.ToString("n");
+            
+            
+            //codes for unchecking the other radio buttons in the interface once the senior citizen method executed
+            with_discountCard_button.Checked = false;
+            employee_discount_button.Checked = false;
+            no_discount_button.Checked = false;
 
+            // set new states
+            cash_renderedtxtbox.Enabled = true;
         }
 
         private void regularRbtn_CheckedChanged(object sender, EventArgs e)
         {
+            //Declaration of variables within a method of an object
+            int qty;
+            double price, discount_amt, discounted_amt;
+            //convert string data from textboxes to numeric and place it as value of the variable
+             qty = Convert.ToInt32(quantitytxtbox.Text);
+            price = Convert.ToDouble(pricetextbox.Text);
+            //create a formula needed for computation
+            discount_amt = (qty * price) * 0.10;
+            discounted_amt = (qty * price) - discount_amt;
+            //converting numeric data to string and display it inside the textboxes
+            discounttxtbox.Text = discount_amt.ToString("n");
+            discountedtxtbox.Text = discounted_amt.ToString("n");
+            
+            
+            //codes for unchecking the other radio buttons in the interface once With disc. card method executed
+            senior_discount_button.Checked = false;
+            employee_discount_button.Checked = false;
+            no_discount_button.Checked = false;
 
+            // set new states
+            cash_renderedtxtbox.Enabled = true;
         }
 
         private void EmployeeRdbtn_CheckedChanged(object sender, EventArgs e)
         {
+            //Declaration of variables within a method of an object
+            int qty;
+            double price, discount_amt, discounted_amt;
+            //convert string data from textboxes to numeric and place it as valu of the variable
+             qty = Convert.ToInt32(quantitytxtbox.Text);
+            price = Convert.ToDouble(pricetextbox.Text);
+            //create a formula needed for computation
+            discount_amt = (qty * price) * 0.15;
+            discounted_amt = (qty * price) - discount_amt;
+            //converting numeric data to string and display it inside the textboxes
+            discounttxtbox.Text = discount_amt.ToString("n");
+            discountedtxtbox.Text = discounted_amt.ToString("n");
+            
+            //codes for unchecking the other radio buttons in the interface once Employee disc method executed
+            senior_discount_button.Checked = false;
+            with_discountCard_button.Checked = false;
+            no_discount_button.Checked = false;
+
+            // set new states
+            cash_renderedtxtbox.Enabled = true;
 
         }
 
         private void noTaxRdbtn_CheckedChanged(object sender, EventArgs e)
         {
+            //Declaration of variables within a method of an object
+            int qty;
+            double price, discount_amt, discounted_amt;
+            //convert string data from textboxes to numeric and place it as value of the variable
+            qty = Convert.ToInt32(quantitytxtbox.Text);
+            price = Convert.ToDouble(pricetextbox.Text);
+            //create a formula needed for computation
+            discount_amt = (qty * price) * 0;
+            discounted_amt = (qty * price) - discount_amt;
+            //converting numeric data to string and display it inside the textboxes
+            discounttxtbox.Text = discount_amt.ToString("n");
+            discountedtxtbox.Text = discounted_amt.ToString("n");
+            
+            
+            //codes for unchecking the other radio buttons in the interface once No method executed
+            senior_discount_button.Checked = false;
+            with_discountCard_button.Checked = false;
+            employee_discount_button.Checked = false;
+
+            // set new states
+            cash_renderedtxtbox.Enabled = true;
 
         }
 
@@ -623,25 +1141,252 @@ namespace New_POS_Application
         /// <param name="e"></param>
         private void calcbtn_Click(object sender, EventArgs e)
         {
+            // declaration of variables with data types
+            int qty;
+            double discount_amt, discounted_amt, cash_rendered, change;
 
+            // make sure quantity text box is 0 if it is empty
+            qty = string.IsNullOrEmpty(quantitytxtbox.Text) ? 0 : Convert.ToInt32(quantitytxtbox.Text);
+            discount_amt = string.IsNullOrEmpty(discounttxtbox.Text) ? 0 : Convert.ToDouble(discounttxtbox.Text);
+            discounted_amt = string.IsNullOrEmpty(discountedtxtbox.Text) ? 0 : Convert.ToDouble(discountedtxtbox.Text);
+            cash_rendered = string.IsNullOrEmpty(cash_renderedtxtbox.Text) ? 0 : Convert.ToDouble(cash_renderedtxtbox.Text);
+            
+            
+            // codes to accumulate the value of the quantity, discount given and discounted amount from one transaction to another.
+            summary_total_qty += qty;
+            summary_total_discount += discount_amt;
+            summary_total_discounted += discounted_amt;
+            change = cash_rendered - discounted_amt;
+            
+            // convert string data form textboxes to numeric and place it as value of the variable
+            total_quantity_txtbox.Text = summary_total_qty.ToString();
+            total_discount_txtbox.Text = summary_total_discount.ToString("n");
+            total_discounted_txtbox.Text = summary_total_discounted.ToString("n");
+            changetxtbox.Text = change.ToString("n");
+            cash_renderedtxtbox.Text = cash_rendered.ToString("n");
+
+
+            /////
+            ///// disable other buttons
+            /////
+           
+            // process group
+            quantitytxtbox.Enabled = false;
+
+            // buttons
+            calcbtn.Enabled = false;
+
+            // discounts
+            senior_discount_button.Enabled = false;
+            with_discountCard_button.Enabled = false;
+            employee_discount_button.Enabled = false;
+            no_discount_button.Enabled = false;
+
+            // meal packs
+            dinnerBtn.Enabled = false;
+            lunchBtn.Enabled = false;
+            dessertsBtn.Enabled = false;
+            breakfastBtn.Enabled = false;
+            beveragesBtn.Enabled = false;
+            coffeeBtn.Enabled = false;
+
+            // pictures
+            pictureBox1.Enabled = false;
+            pictureBox2.Enabled = false;
+            pictureBox3.Enabled = false;
+            pictureBox4.Enabled = false;
+            pictureBox5.Enabled = false;
+            pictureBox6.Enabled = false;
+            pictureBox7.Enabled = false;
+            pictureBox8.Enabled = false;
+            pictureBox9.Enabled = false;
+            pictureBox9.Enabled = false;
+            pictureBox10.Enabled = false;
+            pictureBox11.Enabled = false;
+            pictureBox12.Enabled = false;
+            pictureBox13.Enabled = false;
+            pictureBox14.Enabled = false;
+            pictureBox15.Enabled = false;
+            pictureBox16.Enabled = false;
+            pictureBox17.Enabled = false;
+            pictureBox18.Enabled = false;
+            pictureBox19.Enabled = false;
+
+            // render
+            cash_renderedtxtbox.Enabled = false;
+
+
+            /////
+            ///// set new state
+            /////
+            newbtn.Enabled = true;
         }
 
         private void newbtn_Click(object sender, EventArgs e)
         {
 
+            // discount disable 1st;
+            // if discount button is on, it calculates the empty quantity box
+            senior_discount_button.Checked = false; senior_discount_button.Enabled = false;
+            with_discountCard_button.Checked = false; with_discountCard_button.Enabled = false;
+            employee_discount_button.Checked = false; employee_discount_button.Enabled = false;
+            no_discount_button.Checked = false; no_discount_button.Enabled = false;
+
+
+            // clear the process boxes
+            itemnametxtbox.Clear();
+            pricetextbox.Clear();
+            quantitytxtbox.Clear();         quantitytxtbox.Enabled = false;
+            discounttxtbox.Clear();
+            discountedtxtbox.Clear();
+
+            
+
+            
+            // and cash rendered
+            changetxtbox.Clear();
+            cash_renderedtxtbox.Clear();
+
+
+            // buttons
+            calcbtn.Enabled = false;
+            newbtn.Enabled = false;
+            
+
+
+
+            /////
+            ///// set new state enable
+            /////
+
+            // meal packs
+            dinnerBtn.Enabled = true;
+            lunchBtn.Enabled = true;
+            dessertsBtn.Enabled = true;
+            breakfastBtn.Enabled = true;
+            beveragesBtn.Enabled = true;
+            coffeeBtn.Enabled = true;
+
+            // pictures
+            pictureBox1.Enabled = true;
+            pictureBox2.Enabled = true;
+            pictureBox3.Enabled = true;
+            pictureBox4.Enabled = true;
+            pictureBox5.Enabled = true;
+            pictureBox6.Enabled = true;
+            pictureBox7.Enabled = true;
+            pictureBox8.Enabled = true;
+            pictureBox9.Enabled = true;
+            pictureBox9.Enabled = true;
+            pictureBox10.Enabled = true;
+            pictureBox11.Enabled = true;
+            pictureBox12.Enabled = true;
+            pictureBox13.Enabled = true;
+            pictureBox14.Enabled = true;
+            pictureBox15.Enabled = true;
+            pictureBox16.Enabled = true;
+            pictureBox17.Enabled = true;
+            pictureBox18.Enabled = true;
+            pictureBox19.Enabled = true;
+
         }
 
         private void cancelbtn_Click(object sender, EventArgs e)
         {
+            /////
+            ///// clear all 
+            /////
+
+            // discount disable 1st;
+            // if discount button is on, it calculates the empty quantity box
+            senior_discount_button.Checked = false; senior_discount_button.Enabled = false;
+            with_discountCard_button.Checked = false; with_discountCard_button.Enabled = false;
+            employee_discount_button.Checked = false; employee_discount_button.Enabled = false;
+            no_discount_button.Checked = false; no_discount_button.Enabled = false;
+
+            // process group
+            itemnametxtbox.Clear();
+            pricetextbox.Clear();
+            quantitytxtbox.Clear();     quantitytxtbox.Enabled = false;
+            discounttxtbox.Clear();
+            discountedtxtbox.Clear();
+
+
+            // buttons 
+            calcbtn.Enabled = false;
+            newbtn.Enabled = false;
+            cancelbtn.Enabled = false;
+
+            // summary group
+            total_quantity_txtbox.Clear();      summary_total_qty = 0;
+            total_discount_txtbox.Clear();      summary_total_discount = 0;
+            total_discounted_txtbox.Clear();    summary_total_discounted = 0;
+
+             // render
+            cash_renderedtxtbox.Clear();    cash_renderedtxtbox.Enabled = false;    
+            changetxtbox.Clear();
+
+            
+
 
         }
 
         private void exitbtn_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+
+
+        /// <summary>
+        /// // etc. behaviours
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+
+
+        private void quantitytxtbox_TextChanged(object sender, EventArgs e)
+        {
+            // set new state
+            senior_discount_button.Enabled = true;
+            with_discountCard_button.Enabled = true;
+            employee_discount_button.Enabled = true;
+            no_discount_button.Enabled = true;
+        }
+
+
+        /// <summary>
+        /// //////////////
+        /// dont galaw these below
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void pricetextbox_TextChanged(object sender, EventArgs e)
+        {
 
         }
 
-        private void pricetextbox_TextChanged(object sender, EventArgs e)
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cash_renderedtxtbox_TextChanged(object sender, EventArgs e)
+        {
+            // set new state
+            calcbtn.Enabled = true;
+        }
+
+        private void total_quantity_txtbox_TextChanged(object sender, EventArgs e)
+        {
+            cancelbtn.Enabled = true;
+        }
+
+        private void total_discount_txtbox_TextChanged(object sender, EventArgs e)
         {
 
         }
